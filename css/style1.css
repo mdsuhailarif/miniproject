@@ -38,7 +38,7 @@ a.hiddenanchor{
 	right: 0px;
 	min-height: 560px;	
 	margin: 0px auto;	
-	width: 500px;
+	width: 400px;
 	position: relative;	
 }
 /**** Styling the form elements **/
@@ -223,8 +223,8 @@ p.change_link{
 	position: absolute;
 	color: rgb(255, 129, 0);
 	left: 0px;
-	height: 20px;
-	width: 440px;
+	height: 58px;
+	width: 350px;
 	padding: 17px 30px 20px 30px;
 	font-size: 16px	;
 	text-align: right;
@@ -235,29 +235,29 @@ p.change_link{
 	background: rgb(255, 129, 0);
 	background: -moz-repeating-linear-gradient(-45deg, 
 	rgb(251, 212, 185) , 
-	rgb(251, 212, 185) 15px, 
-	rgb(255, 255, 240) 15px, 
+	rgb(251, 212, 185) 20px, 
+	rgb(255, 255, 240) 20px, 
 	rgb(255, 255, 240) 30px, 
 	rgb(251, 212, 185) 30px
 	);
 	background: -webkit-repeating-linear-gradient(-45deg, 
 	rgb(251, 212, 185) , 
-	rgb(251, 212, 185) 15px, 
-	rgb(255, 255, 240) 15px, 
+	rgb(251, 212, 185) 20px, 
+	rgb(255, 255, 240) 20px, 
 	rgb(255, 255, 240) 30px, 
 	rgb(251, 212, 185) 30px
 	);
 	background: -o-repeating-linear-gradient(-45deg, 
 	rgb(251, 212, 185) , 
-	rgb(251, 212, 185) 15px, 
+	rgb(251, 212, 185) 20px, 
 	rgb(255, 255, 240) 15px, 
 	rgb(255, 255, 240) 30px, 
 	rgb(251, 212, 185) 30px
 	);
 	background: repeating-linear-gradient(-45deg, 
 	rgb(251, 212, 185) , 
-	rgb(251, 212, 185) 15px, 
-	rgb(255, 255, 240) 15px, 
+	rgb(251, 212, 185) 20px, 
+	rgb(255, 255, 240) 20px, 
 	rgb(255, 255, 240) 30px, 
 	rgb(251, 212, 185) 30px
 	);
