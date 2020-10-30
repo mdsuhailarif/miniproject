@@ -13,8 +13,9 @@
         /* execute the query */
         if( $stmt -> execute() ){
          header("location: 'signup.html' ");
-		 exit;
+		
         }
+		 else{ echo "Error 404";}
         
         /* close connection */
         $db = null;
