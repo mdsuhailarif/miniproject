@@ -23,10 +23,9 @@ $ret = pg_query($db, $sql);
       echo "Error";
    }
   else {
-      echo "Table created successfully\n";
+      include_once("Homepage.html");
    }
    pg_close($db); 
 
-include_once("Homepage.html");
 
 ?>
