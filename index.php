@@ -7,6 +7,11 @@ function pg_connection_string_from_database_url() {
 
 # Here we establish the connection. Yes, that's all.
 $db = pg_connect(pg_connection_string_from_database_url());
+ if(!$db) {
+      echo "Error : Unable to open database\n";
+   } else {
+      echo "Opened database successfully\n";
+   }
 
  $sql = ["CREATE TABLE IF NOT EXISTS logind (USERNAME VARCHAR(100) PRIMARY KEY, EMAIL TEXT  NOT NULL UNIQUE,PASSWORD TEXT);"];
  
