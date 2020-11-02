@@ -7,19 +7,20 @@
 
    		$db = pg_connect( "$host $port $dbname $credentials"  );
 		 
-		$uname = $_POST[username];
-		$email = $_POST[email];
-		$passwrd = $_POST[password];
+		$uname = $_POST['username'];
+		$email = $_POST['email'];
+		$passwrd = $_POST['password'];
         
         	$sql =<<<EOF
-      			INSERT INTO COMPANY (USERNAME,EMAIL,PASSWORD)
-      			VALUES ('abcd','xyz@gmail.com','1234');
+      			INSERT INTO logind (USERNAME,EMAIL,PASSWORD)
+      			VALUES ($uname,$email,$passwrd);
 		 EOF;
 
    		$ret = pg_query($db, $sql);
    		if(!$ret) {
    		   echo "ERROR";
-   		} else {
+   		} 
+		 else {
    		   echo "Records created successfully\n";
    		}
    		pg_close($db);
