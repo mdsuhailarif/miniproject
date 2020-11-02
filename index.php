@@ -8,10 +8,24 @@ function pg_connection_string_from_database_url() {
 # Here we establish the connection. Yes, that's all.
 $db = pg_connect(pg_connection_string_from_database_url());
 
-$sql = ['CREATE TABLE IF NOT EXISTS logind (USERNAME VARCHAR(100) PRIMARY KEY, EMAIL  NOT NULL UNIQUE,PASSWORD TEXT);'];
+namespace phpcreatetable;
 
-$db->execute($sql);
-
+class postgrescreate {
+    private $pdo;
+    public function __construct($pdo) {
+        $this->pdo = $pdo;
+    }
+ 
+    public function createTables() { $sqlList = ['logind (USERNAME VARCHAR(100) PRIMARY KEY, EMAIL  NOT NULL UNIQUE,PASSWORD TEXT);'];
+ 
+        // execute each sql statement to create new tables
+        foreach ($sqlList as $sql) {
+            $this->pdo->exec($sql);
+        }
+        echo 'table successfully created!';
+        return $this;
+    }
+}
 include_once("Homepage.html");
 
 ?>
