@@ -16,7 +16,7 @@
    }
 
         
-        	$sql ="INSERT INTO book VALUES ('$_POST[username]','$_POST[email]','$_POST[password]')";
+        	$sql ="INSERT INTO logind VALUES ('$_POST[username]','$_POST[email]','$_POST[password]')";
 
    		$ret = pg_query( $sql);
    		if(!$ret) {
