@@ -18,14 +18,13 @@
         $stmt -> bindParam(':PASSWORD',$_POST['password'], PDO::PARAM_STR);
         
         /* execute the query */
-        if( $stmt -> execute() ){
-         header("location: 'signup.html' ");
-		
-        }
-		 else{ echo "Error 404";}
-        
-        /* close connection */
-        $db = null;
+       $ret = pg_query($db, $stmt);
+   if(!$ret) {
+      echo pg_last_error($db);
+   } else {
+      echo "Records created successfully\n";
+   }
+   pg_close($db);
     }
 ?>
 
