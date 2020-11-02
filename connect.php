@@ -15,13 +15,13 @@
       echo "Opened database successfully\n";
    }
  if(isset($_POST["Signup"])){      
-		$uname = $_POST['username'];
+		$username = $_POST['username'];
 		$email = $_POST['email'];
-		$passwrd = $_POST['password'];
+		$password = $_POST['password'];
         
         	$sql =<<<EOF
       			INSERT INTO logind (USERNAME,EMAIL,PASSWORD)
-      			VALUES ('".$uname."','".$email."','".$passwrd."');
+      			VALUES ($username,$email,$password);
 		 EOF;
 
    		$ret = pg_query($db, $sql);
