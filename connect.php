@@ -21,7 +21,7 @@
       			VALUES ('abcd','xyz@gmail.com','1234');
 		 EOF;
 
-   		$ret = pg_query($db, $sql);
+   		$ret = pg_query( $sql);
    		if(!$ret) {
    		   echo "ERROR";
    		} 
