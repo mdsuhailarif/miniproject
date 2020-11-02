@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL); 
-ini_set('display_errors', 1);
 
 		$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    		$port        = "port = 5432";
@@ -9,23 +7,14 @@ ini_set('display_errors', 1);
 
    		$db = pg_connect( "$host $port $dbname $credentials");
 
-	 if(isset($_POST["Signup"])){      
-		$uname = $_POST['username'];
-		$email = $_POST['email'];
-		$passwrd = $_POST['password'];
-        
-        	$sql =<<<EOF
-      			INSERT INTO logind (USERNAME,EMAIL,PASSWORD)
-      			VALUES ('".$uname."','".$email."','".$passwrd."');
-		 EOF;
+	
+   $db = pg_connect( "$host $port $dbname $credentials"  );
+   if(!$db) {
+      echo "Error : Unable to open database\n";
+   } else {
+      echo "Opened database successfully\n";
+   }
 
-   		$ret = pg_query($db, $sql);
-   		if(!$ret) {
-   		   echo "ERROR";
-   		} 
-		 else {
-   		   echo "Records created successfully\n";
-   		}
    		pg_close($db);
 		 
 ?>
