@@ -1,30 +1,28 @@
 <?php
 	 if($_POST){      
-       		# This function reads your DATABASE_URL config var and returns a connection
-		function pg_connection_string_from_database_url() {
- 		extract(parse_url($_ENV["postgres://tgfotlqsesxkop:8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276@ec2-54-224-175-142.compute-1.amazonaws.com:5432/dcjrfn9ert59om"]));
-  		return "user=$user password=$pass host=$host dbname=" . substr($path, 1); 
-		}
+       		$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
+   		$port        = "port = 5432";
+   		$dbname      = "dbname = dcjrfn9ert59om";
+   		$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
 
-		# Here we establish the connection
-		$db = pg_connect(pg_connection_string_from_database_url());
+   		$db = pg_connect( "$host $port $dbname $credentials"  );
 		 
-		 $uname = $_POST["username"];
-		 $email = $_POST["email"];
-		 $passwrd = $_POST"password"];
+		$uname = $_POST["username"];
+		$email = $_POST["email"];
+		$passwrd = $_POST"password"];
         
-        /* inserting into database */
-        $stmt = "INSERT INTO logind (USERNAME, EMAIL, PASSWORD) VALUES ($uname, $email, $passwrd);";
-        
-        /* execute the query */
-       $ret = pg_query($db, $stmt);
-   if(!$ret) {
-      echo pg_last_error($db);
-   } else {
-      echo "Records created successfully\n";
-   }
-   pg_close($db);
-    }
+        	$sql =<<<EOF
+      			INSERT INTO COMPANY (USERNAME,EMAIL,PASSWORD)
+      			VALUES ($unmae,$email,$passwrd);
+		 EOF;
+
+   		$ret = pg_query($db, $sql);
+   		if(!$ret) {
+   		   echo "ERROR";
+   		} else {
+   		   echo "Records created successfully\n";
+   		}
+   		pg_close($db);
 ?>
 
 <script>
