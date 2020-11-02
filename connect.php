@@ -14,14 +14,11 @@
    } else {
       echo "Opened database successfully\n";
    }
- if(isset($_POST["Signup"])){      
-		$username = $_POST[username];
-		$email = $_POST[email];
-		$password = $_POST[password];
+
         
         	$sql =<<<EOF
       			INSERT INTO logind (USERNAME,EMAIL,PASSWORD)
-      			VALUES ($username,$email,$password);
+      			VALUES ('abcd','xyz@gmail.com','1234');
 		 EOF;
 
    		$ret = pg_query($db, $sql);
@@ -33,7 +30,6 @@
    		}
 
    		pg_close($db);
- }
 		 
 ?>
 
