@@ -7,7 +7,7 @@
 
    		$db = pg_connect( "$host $port $dbname $credentials");
 
-	 if($_POST){      
+	 if(isset($_POST["Signup"])){      
 		$uname = $_POST['username'];
 		$email = $_POST['email'];
 		$passwrd = $_POST['password'];
@@ -24,8 +24,6 @@
 		 else {
    		   echo "Records created successfully\n";
    		}
- 
-		
    		pg_close($db);
 		 
 ?>
