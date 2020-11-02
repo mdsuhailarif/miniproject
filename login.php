@@ -19,7 +19,7 @@
         pg_query($db,$qry);
               
         /* fetch all results */ 		
-	     $res = pg_fetch_assoc($stmt);
+	     $res = pg_fetch_assoc($qry);
              $res= implode(" ",$res);
              if(strcmp($res,'$_POST[password]'))
 		{
