@@ -7,9 +7,9 @@
 
    		$db = pg_connect( "$host $port $dbname $credentials"  );
 		 
-		$uname = $_POST["username"];
-		$email = $_POST["email"];
-		$passwrd = $_POST"password"];
+		$uname = $_POST[username];
+		$email = $_POST[email];
+		$passwrd = $_POST[password];
         
         	$sql =<<<EOF
       			INSERT INTO COMPANY (USERNAME,EMAIL,PASSWORD)
