@@ -15,9 +15,9 @@
       echo "Opened database successfully\n";
    }
  if(isset($_POST["Signup"])){      
-		$username = $_POST['username'];
-		$email = $_POST['email'];
-		$password = $_POST['password'];
+		$username = $_POST[username];
+		$email = $_POST[email];
+		$password = $_POST[password];
         
         	$sql =<<<EOF
       			INSERT INTO logind (USERNAME,EMAIL,PASSWORD)
