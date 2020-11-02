@@ -8,7 +8,7 @@ function pg_connection_string_from_database_url() {
 # Here we establish the connection. Yes, that's all.
 $db = pg_connect(pg_connection_string_from_database_url());
 
- $sql = ['logind (USERNAME VARCHAR(100) PRIMARY KEY, EMAIL  NOT NULL UNIQUE,PASSWORD TEXT);'];
+ $sql = ['CREATE TABLE IF NOT EXISTS logind (USERNAME VARCHAR(100) PRIMARY KEY, EMAIL  NOT NULL UNIQUE,PASSWORD TEXT);'];
  
 $ret = pg_query($db, $sql);
    if(!$ret) {
