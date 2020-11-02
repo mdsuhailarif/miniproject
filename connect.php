@@ -8,14 +8,13 @@
 
 		# Here we establish the connection
 		$db = pg_connect(pg_connection_string_from_database_url());
+		 
+		 $uname = $_POST["username"];
+		 $email = $_POST["email"];
+		 $passwrd = $_POST"password"];
         
         /* inserting into database */
-        $stmt = $db -> prepare("INSERT INTO logind (USERNAME, EMAIL, PASSWORD) VALUES (:USERNAME, :EMAIL, :PASSWORD)");
-        
-        /* bind params */
-        $stmt -> bindParam(':USERNAME', $_POST['username'], PDO::PARAM_STR);
-        $stmt -> bindParam(':EMAIL',$_POST['email'], PDO::PARAM_STR);
-        $stmt -> bindParam(':PASSWORD',$_POST['password'], PDO::PARAM_STR);
+        $stmt = "INSERT INTO logind (USERNAME, EMAIL, PASSWORD) VALUES ($uname, $email, $passwrd)";
         
         /* execute the query */
        $ret = pg_query($db, $stmt);
