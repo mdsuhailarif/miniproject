@@ -13,7 +13,7 @@
         
         	$sql =<<<EOF
       			INSERT INTO COMPANY (USERNAME,EMAIL,PASSWORD)
-      			VALUES ($_POST["username"],$_POST["email"],$_POST"password"]);
+      			VALUES ("$_POST["username"]","$_POST["email"]","$_POST"password"]");
 		 EOF;
 
    		$ret = pg_query($db, $sql);
