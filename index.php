@@ -5,6 +5,11 @@ $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    $credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
+ if(!$db) {
+      echo "Error : Unable to open database\n";
+   } else {
+      echo "Opened database successfully\n";
+   }
 
 $sql =<<<EOF
    CREATE TABLE IF NOT EXISTS logind
@@ -18,9 +23,9 @@ $ret = pg_query($db, $sql);
       echo "Error";
    }
   else {
-      include_once("Homepage.html");
+      echo "Table Created";
    }
    pg_close($db); 
-
+include_once("Homepage.html");
 
 ?>
