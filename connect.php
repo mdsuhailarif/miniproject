@@ -14,7 +14,7 @@
 		 $passwrd = $_POST"password"];
         
         /* inserting into database */
-        $stmt = "INSERT INTO logind (USERNAME, EMAIL, PASSWORD) VALUES ($uname, $email, $passwrd)";
+        $stmt = "INSERT INTO logind (USERNAME, EMAIL, PASSWORD) VALUES ($uname, $email, $passwrd);";
         
         /* execute the query */
        $ret = pg_query($db, $stmt);
