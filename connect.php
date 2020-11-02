@@ -23,7 +23,7 @@
    		   echo "ERROR";
    		} 
 		 else {
-   		   header("location: Signup.html ");
+   		   header("location: signup.html ");
    		}
 
    		pg_close($db);
