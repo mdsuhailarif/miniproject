@@ -13,8 +13,8 @@ $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
 
 $sql =<<<EOF
    CREATE TABLE IF NOT EXISTS logind
-   (USERNAME CHAR(100) PRIMARY KEY,
-    EMAIL TEXT  NOT NULL UNIQUE,
+   (USERNAME CHAR(100) ,
+    EMAIL TEXT  NOT NULL UNIQUE Primary Key,
     PASSWORD TEXT); 
 EOF;
  
