@@ -20,7 +20,7 @@
 
    		$ret = pg_query( $sql);
    		if(!$ret) {
-   		   echo "ERROR";
+   		   echo "This E-Mail is already registered";
    		} 
 		 else {
    		   header("location: signup.html ");
