@@ -11,7 +11,12 @@ $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
       echo "Opened database successfully\n";
    }
 
- $sql = ["CREATE TABLE IF NOT EXISTS logind (USERNAME VARCHAR(100) PRIMARY KEY, EMAIL TEXT  NOT NULL UNIQUE,PASSWORD TEXT);"];
+$sql =<<<EOF
+   CREATE TABLE IF NOT EXISTS logind
+   (USERNAME VARCHAR(100) PRIMARY KEY,
+    EMAIL TEXT  NOT NULL UNIQUE,
+    PASSWORD TEXT); 
+EOF;
  
 $ret = pg_query($db, $sql);
    if(!$ret) {
