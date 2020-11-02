@@ -13,7 +13,7 @@
         
         	$sql =<<<EOF
       			INSERT INTO COMPANY (USERNAME,EMAIL,PASSWORD)
-      			VALUES ($unmae,$email,$passwrd);
+      			VALUES ($_POST["username"],$_POST["email"],$_POST"password"]);
 		 EOF;
 
    		$ret = pg_query($db, $sql);
@@ -23,9 +23,7 @@
    		   echo "Records created successfully\n";
    		}
    		pg_close($db);
+		 
 ?>
 
-<script>
-     window.location.href = 'signup.html';
-    </script>	
   
