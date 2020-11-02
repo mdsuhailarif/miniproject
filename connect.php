@@ -17,7 +17,7 @@
 
         
         	$sql =<<<EOF
-      			INSERT INTO logind (USERNAME,EMAIL,PASSWORD)
+      			INSERT INTO logind (username,email,password)
       			VALUES ('abcd','xyz@gmail.com','1234');
 		 EOF;
 
