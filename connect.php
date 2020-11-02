@@ -13,22 +13,7 @@
       echo "Opened database successfully\n";
    }
 		 
-		$uname = $_POST['username'];
-		$email = $_POST['email'];
-		$passwrd = $_POST['password'];
-        
-        	$sql =<<<EOF
-      			INSERT INTO logind (USERNAME,EMAIL,PASSWORD)
-      			VALUES ($uname,$email,$passwrd);
-		 EOF;
-
-   		$ret = pg_query($db, $sql);
-   		if(!$ret) {
-   		   echo "ERROR";
-   		} 
-		 else {
-   		   echo "Records created successfully\n";
-   		}
+		
    		pg_close($db);
 		 
 ?>
