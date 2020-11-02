@@ -16,10 +16,7 @@
    }
 
         
-        	$sql =<<<EOF
-      			INSERT INTO logind (username,email,password)
-      			VALUES ('abcd','xyz@gmail.com','1234');
-		 EOF;
+        	$sql ="INSERT INTO book VALUES ('$_POST[username]','$_POST[email]','$_POST[password]')";
 
    		$ret = pg_query( $sql);
    		if(!$ret) {
