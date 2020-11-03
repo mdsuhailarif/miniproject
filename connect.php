@@ -11,7 +11,7 @@
    $db = pg_connect( "$host $port $dbname $credentials"  );
  
         
-        	$sql ="INSERT INTO logind VALUES ('$_POST[username]','$_POST[email]','$_POST[password]')";
+        	$sql ="INSERT INTO logind VALUES ('$_POST[username]','$_POST[email]',md5('$_POST[password]'))";
 
    		$ret = pg_query( $sql);
    		if(!$ret) {
