@@ -8,7 +8,7 @@
    $db = pg_connect( "$host $port $dbname $credentials"  );
         
    /* Create a query statement */
-   $qry = pg_query("SELECT * FROM logind WHERE username = '$_POST[username]' and password = '$_POST[password]'");
+   $qry = pg_query("SELECT * FROM logind WHERE username = '$_POST[username]' and password = md5('$_POST[password]')");
     $login_check = pg_num_rows($qry);
 
     if($login_check > 0)
