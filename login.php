@@ -13,7 +13,7 @@
    };
         
         /* Create a query statement */
-   $query = "SELECT * FROM logins WHERE userName = '$username' AND password = md5('$password');";
+   $query = "SELECT * FROM logind WHERE userName = '$username' AND password = md5('$password');";
 $result = pg_query($db, $query);
 if(pg_num_rows($result) != 1) {
     echo " "
