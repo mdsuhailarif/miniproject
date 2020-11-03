@@ -1,4 +1,5 @@
 <?php
+session_start();
 
    $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    $port        = "port = 5432";
@@ -12,9 +13,9 @@
     $login_check = pg_num_rows($qry);
 
     if($login_check > 0)
-    { echo "Login Failed ! "; }
+    { header("location: signup.html?status=erro&message=Login Successful !"); }
     else 
-    { header("location: dashboard.html"); } 
+    { header("location: dashboard.html?status=erro&message=Login Successful !"); } 
 
 pg_close($db);
    
