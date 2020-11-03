@@ -23,10 +23,7 @@ session_start();
    		}
 
    		pg_close($db);
-function csrftoken()
-{ $token= bin2hex(randombyte(32));
- $_SESSION[token]=$token;
- return $token;
+
 }
 
 ?>
