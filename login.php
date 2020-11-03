@@ -13,12 +13,12 @@
    };
         
         /* Create a query statement */
-   $query = "SELECT * FROM logind WHERE userName = '$username' AND password = md5('$password');";
-$result = pg_query($db, $query);
-if(pg_num_rows($result) != 1) {
-    echo " "
+   $qry = pg_query($db, "SELECT password FROM logind WHERE username = '$_POST[username]' OR email = '$_POST[username]';);
+$result= pg_fetch_object($qry);
+if(strcmp($result,$_POST[password])) {
+    echo "Login Failed ! ";
 } else {
-    header(location: "daashborad.html")
+    header(location: "daashborad.html");
 } 
    
         
