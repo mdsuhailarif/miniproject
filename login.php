@@ -13,7 +13,7 @@ session_start();
     $login_check = pg_num_rows($qry);
 
     if($login_check > 0)
-    { header("location: signup.html?status=erro&message=Login Successful !"); }
+    { header("location: signup.html?status=erro&message=Login_Failed !"); }
     else 
     { header("location: dashboard.html?status=erro&message=Login Successful !"); } 
 
