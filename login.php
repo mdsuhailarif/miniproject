@@ -13,21 +13,13 @@
    };
         
         /* Create a query statement */
-        $qry = "SELECT password from logind where username= '$_POST[username]' or email = '$_POST[username]' ");
-        
-        /* execute the query */
-        pg_query($db,$qry);
-              
-        /* fetch all results */ 		
-	     $res = pg_fetch_assoc($qry);
-             $res= implode(" ",$res);
-             if(strcmp($res,'$_POST[password]'))
-		{
-		 header("location: dashboard.html ");}
-		 else{
-			 echo "Login failed! Try again.";
-		 }	 
-		 
+   $query = "SELECT * FROM logins WHERE userName = '$username' AND password = md5('$password');";
+$result = pg_query($db, $query);
+if(pg_num_rows($result) != 1) {
+    echo " "
+} else {
+    header(location: "daashborad.html")
+} 
    
         
 }	
