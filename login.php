@@ -15,7 +15,7 @@ session_start();
     if($login_check > 0)
     { header("location: signup.html?status=erro&message=Login_Failed !"); }
     else 
-    { header("location: dashboard.html?status=erro&message=Login Successful !"); } 
+    { header("location: dashboard.php?status=erro&message=Login Successful !"); } 
 
 $_SESSION['email']= '$_POST[email]';
 
