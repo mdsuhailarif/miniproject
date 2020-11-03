@@ -8,12 +8,12 @@
    $db = pg_connect( "$host $port $dbname $credentials"  );
         
         /* Create a query statement */
-   $qry = pg_query($db, "SELECT * FROM logind WHERE username = '$_POST[username]' and password = '$_POST[password]';);
+   $qry = pg_query($db, "SELECT * FROM logind WHERE username = '$_POST[username]' and password = '$_POST[password]';");
     $login_check = pg_num_rows($qry);
-    if($login_check > 0){ {
+    if($login_check > 0){ 
       echo "Login Failed ! "; }
       else {
-      header(location: "daashborad.html");
+      header(location: "dashboard.html");
       } 
    
 ?>
