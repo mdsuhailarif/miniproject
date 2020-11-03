@@ -17,7 +17,7 @@ session_start();
     else 
     { header("location: dashboard.php?status=erro&message=Login Successful !"); } 
 
-$_SESSION['email']= '$_POST[email]';
+$_SESSION['email']= $_POST[email];
 
 pg_close($db);
    
