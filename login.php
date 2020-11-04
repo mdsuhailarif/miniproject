@@ -13,9 +13,9 @@ session_start();
    $row= pg_num_rows($qry);
 $_SESSION['email']= $_POST[email];
     if($row > 0)
-    { echo"yes"; echo $row; include_once("dashboard.php"); }
+    { include_once("dashboard.php"); }
     else 
-    {  echo "no"; echo $row; include_once("signup.html"); } 
+    { include_once("signup.html"); } 
 
 pg_close($db);
 ?>
