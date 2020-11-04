@@ -10,15 +10,17 @@ session_start();
         
    /* Create a query statement */
    $qry = pg_query("SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]')");
-    $login_check = pg_num_rows($qry);
+    $log = pg_fetch_array($qry)
+       $verify =$log['password']
+       echo $verify;
 
-    if($login_check > 0)
-    { header("location: signup.html?status=erro&message=Login_Failed !"); }
-    else 
-    { header("location: dashboard.php?status=erro&message=Login Successful !"); } 
+    //if($login_check > 0)
+    //{ header("location: signup.html?status=erro&message=Login_Failed !"); }
+    //else 
+    //{ header("location: dashboard.php?status=erro&message=Login Successful !"); } 
 
 $_SESSION['email']= $_POST[email];
 
 pg_close($db);
-   
 ?>
+   
