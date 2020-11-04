@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 		$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    		$port        = "port = 5432";
