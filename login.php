@@ -15,7 +15,7 @@ session_start();
     if($log > 0)
     { echo"no"; echo $log; echo $qry; include_once("dashboard.php"); }
     else 
-    {  echo "yes "; echo $log; echo $qry; include_once("dashboard.php"); } 
+    {  echo "yes "; echo $log['password']; echo $qry; include_once("dashboard.php"); } 
 
 $_SESSION['email']= $_POST[email];
 
