@@ -9,12 +9,15 @@ session_start();
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
    /* Create a query statement */
-   $qry = pg_query("SELECT password FROM logind WHERE email = '$_POST[email]'");
+   $qry = pg_query("SELECT * FROM logind WHERE email = '$_POST[email]'");
     
-    $log = pg_fetch_assoc($qry);
-      $res= implode(" ",$log);
+   while ($row = pg_fetch_assoc($qry)) {
+  echo $row['password']; $res= $row['password']
+   }
 
-    if($log > 0)
+      $res= implode(" ",$res);
+
+    if($row > 0)
     { echo"no"; echo $res;  include_once("dashboard.php"); }
     else 
     {  echo "yes "; echo $res;  include_once("dashboard.php"); } 
