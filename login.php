@@ -17,7 +17,7 @@ session_start();
     if($log > 0)
     { echo $verify; include_once("signup.html"); }
     else 
-    {  echo $verify; header("location: dashboard.php?status=erro&message=Login Successful !"); } 
+    {  echo $verify; include_once("signup.html"); } 
 
 $_SESSION['email']= $_POST[email];
 
