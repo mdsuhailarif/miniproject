@@ -16,7 +16,7 @@ session_start();
     if($log > 0)
     { echo"no"; echo $log; include_once("signup.html"); }
     else 
-    {  echo "yes "; echo $log; ; include_once("dashboard.php"); } 
+    {  echo "yes "; echo $log; echo $qry; include_once("dashboard.php"); } 
 
 $_SESSION['email']= $_POST[email];
 
