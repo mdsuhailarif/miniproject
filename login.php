@@ -12,10 +12,12 @@ session_start();
    $qry = pg_query("SELECT password FROM logind WHERE email = '$_POST[email]'");
     
     $log = pg_fetch_assoc($qry);
+      $res= implode(" ",$log);
+
     if($log > 0)
-    { echo"no"; echo $log; echo $qry; include_once("dashboard.php"); }
+    { echo"no"; echo $res; echo $qry; include_once("dashboard.php"); }
     else 
-    {  echo "yes "; echo $log['password']; echo $qry; include_once("dashboard.php"); } 
+    {  echo "yes "; echo $res; echo $qry; include_once("dashboard.php"); } 
 
 $_SESSION['email']= $_POST[email];
 
