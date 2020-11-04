@@ -18,7 +18,7 @@ session_start();
     else 
     {  echo "yes "; echo $log; echo $qry; include_once("dashboard.php"); } 
 
-$_SESSION['email']= $_POST["email"];
+$_SESSION['email']= $_POST[email];
 
 pg_close($db);
 ?>
