@@ -3,7 +3,7 @@ PASS: ${{ secrets.DB_PASS }}
 $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    $port        = "port = 5432";
    $dbname      = "dbname = dcjrfn9ert59om";
-   $credentials = "user = $PASS ";
+   $credentials = "user = tgfotlqsesxkop password= $PASS ";
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
