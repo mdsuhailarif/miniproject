@@ -12,7 +12,7 @@ session_start();
    $qry = pg_query("SELECT * FROM logind WHERE email = '$_POST[email]'");
     
    while ($row = pg_fetch_assoc($qry)) {
-  echo $row['password']; $res= $row['password']
+  echo $row['password']; $res= $row['password'];
    }
 
       $res= implode(" ",$res);
