@@ -13,7 +13,7 @@ session_start();
     
     $log = pg_fetch_assoc($qry);
     if($log > 0)
-    { echo"no"; echo $log; include_once("signup.html"); }
+    { echo"no"; echo $log; echo $qry; include_once("dashboard.php"); }
     else 
     {  echo "yes "; echo $log; echo $qry; include_once("dashboard.php"); } 
 
