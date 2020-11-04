@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: 
+        run: |
         env: 
           DB_PASS: ${{ secrets.DB_PASS }}
