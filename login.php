@@ -9,15 +9,14 @@ session_start();
    $db = pg_connect( "$host $port $dbname $credentials"  );
         
    /* Create a query statement */
-   $qry = pg_query("SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]')");
+   $qry = pg_query("SELECT password FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]')");
     $log = pg_fetch_array($qry);
-       $verify =$log['password'];
        
 
     if($log > 0)
-    { echo $verify; include_once("signup.html"); }
+    { echo"no"; echo $log; include_once("signup.html"); }
     else 
-    {  echo "no ";echo $verify; ; include_once("signup.html"); } 
+    {  echo "yes "; echo $log; ; include_once("dashboard.php"); } 
 
 $_SESSION['email']= $_POST[email];
 
