@@ -10,11 +10,11 @@ session_start();
 
    /* Create a query statement */
    $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]') ");
-
-    if(pg_num_rows($qry) > 0)
-    { echo"yes"; include_once("dashboard.php"); }
+   $row= pg_num_rows($qry)
+    if($row > 0)
+    { echo"yes"; echo $row; include_once("dashboard.php"); }
     else 
-    {  echo "no"; include_once("signup.html"); } 
+    {  echo "no"; echo $row; include_once("signup.html"); } 
 
 $_SESSION['email']= $_POST[email];
 
