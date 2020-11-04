@@ -15,9 +15,9 @@ session_start();
       $res= implode(" ",$log);
 
     if($log > 0)
-    { echo"no"; echo $res; echo $qry; include_once("dashboard.php"); }
+    { echo"no"; echo $res;  include_once("dashboard.php"); }
     else 
-    {  echo "yes "; echo $res; echo $qry; include_once("dashboard.php"); } 
+    {  echo "yes "; echo $res;  include_once("dashboard.php"); } 
 
 $_SESSION['email']= $_POST[email];
 
