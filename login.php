@@ -9,10 +9,10 @@ session_start();
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
    /* Create a query statement */
-   $qry = pg_query("SELECT * FROM logind WHERE email = '$_POST[email]'");
+   $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]'  ");
     
-   while ($row = pg_fetch_assoc($qry)) {
-  echo $row['password']; $res= $row['password'];
+   while ($row = pg_fetch_assoc($$qry)) {
+   $res= $row['password'];
    }
 
       $res= implode(" ",$res);
