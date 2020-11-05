@@ -13,7 +13,7 @@ session_start();
    $row= pg_num_rows($qry);
 $_SESSION['email']= $_POST[email];
     if($row > 0)
-    { include_once("dashboard.php"); }
+    { include_once("dashboard.html"); }
     else 
     { include_once("signup.html"); } 
 
