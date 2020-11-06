@@ -13,17 +13,6 @@ $sql =<<<EOF
     PASSWORD TEXT); 
 EOF;
 
-$query = "SELECT * FROM logind"; 
-
-$rs = pg_query($db, $query);
-if(!$rs)
-{ echo "failed";}
-echo "<table>";
-while ($row = pg_fetch_row($rs)) { 
-  echo "<tr><td>"; echo "$row[0]"; echo "</td> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>";
-}echo "</table>";
- 
-$ret = pg_query($db, $sql);
    pg_close($db);
 include_once("Homepage.html");
 
