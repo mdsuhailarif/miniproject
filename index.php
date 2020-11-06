@@ -12,9 +12,17 @@ $sql =<<<EOF
     EMAIL TEXT  NOT NULL UNIQUE Primary Key,
     PASSWORD TEXT); 
 EOF;
+
+$query = "SELECT * FROM cars logind"; 
+
+$rs = pg_query($db, $query);
+
+while ($row = pg_fetch_row($rs)) {
+  echo "$row[0] $row[1] $row[2]\n";
+}
  
 $ret = pg_query($db, $sql);
-   pg_close($db); 
+   pg_close($db);
 include_once("Homepage.html");
 
 ?>
