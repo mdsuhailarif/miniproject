@@ -15,11 +15,11 @@ EOF;
 
 $query = "SELECT * FROM cars logind"; 
 
-$rs = pg_query($db, $query);
+$rs = pg_select($db, $query);
 if(!$rs)
 { echo "failed";}
 
-while ($row = pg_fetch_row($rs)) {
+while ($row = pg_fetch_rows($rs)) {
   echo "$row[0] $row[1] $row[2]\n";
 }
  
