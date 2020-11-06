@@ -80,7 +80,7 @@ p{
 
 
 .icon{
-  color:#ff4c68;
+  color:#FF4500;
   margin-bottom: 1rem;
 }
 
@@ -95,7 +95,7 @@ p{
   padding: 7% 15%;
   text-align: center;
   color: #fff;
-  background-color: #ff4c68;
+  background-color: #FF6347;
 }
 
 .testi-image{
@@ -123,26 +123,14 @@ p{
 /* press */
 
 #press{
-  background-color: #ff4c68;
+  background-color: #FF6347;
   text-align: center;
   padding: 3% 1%;
 }
 
 .press-logo{
   width: 15%;
-  margin: 20px 20px 50px;
-}
-
-
-/* pricing-section */
-
-#pricing{
-  padding: 100px;
-  text-align: center;
-}
-
-.pricing-colum{
-  padding: 3% 2%;
+  margin: 10px 10px 30px;
 }
 
 
@@ -184,3 +172,25 @@ p{
 .social-icon{
   margin: 2% 2%;
 }
+
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 1366px;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+#container{
+	 text-align: left;
+	 margin: 0;
+	 padding: 0;
+	 margin: 0 auto;
+	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+} }

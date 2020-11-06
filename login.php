@@ -7,18 +7,16 @@ session_start();
    $credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
-        
+
    /* Create a query statement */
-   $qry = pg_query("SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]')");
-    $login_check = pg_num_rows($qry);
-
-    if($login_check > 0)
-    { header("location: signup.html?status=erro&message=Login_Failed !"); }
-    else 
-    { header("location: dashboard.php?status=erro&message=Login Successful !"); } 
-
+   $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]') ");
+   $row= pg_num_rows($qry);
 $_SESSION['email']= $_POST[email];
+    if($row > 0)
+    { include_once("dashboard.html"); }
+    else 
+    { include_once("signup.html"); } 
 
 pg_close($db);
-   
 ?>
+   
