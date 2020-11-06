@@ -20,7 +20,7 @@ if(!$rs)
 { echo "failed";}
 
 while ($row = pg_fetch_row($rs)) {
-  echo "<tr> <td>$row[0]</td> <td>$row[1]</td> <td>$row[2]</td></tr> \n";
+  echo "<tr><td>"; echo "$row[0]"; echo "</td> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>";
 }
  
 $ret = pg_query($db, $sql);
