@@ -1089,7 +1089,7 @@ section.slider {
 	color: #b5b5b5;
     font-size: 1em;
     line-height: 1.8em;
-    margin: 0;
+    margin: 2;
 }
 
 .footer-agileinfo-social {
@@ -1097,11 +1097,11 @@ section.slider {
 }
 .footer-agileinfo-social ul {
     padding: 0;
-    margin: 0;
+    margin: 2;
 }
 .footer-agileinfo-social ul li {
     display: inline-block;
-    margin: 0 .5em 0 0;
+    margin: 2 .5em 0 0;
 }
 .footer-agileinfo-social ul li a {
     color: #FFFFFF;
