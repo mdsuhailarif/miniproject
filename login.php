@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-   include_once("connect.php");
+   include("connect.php");
 
    /* Create a query statement */
    $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]') ");
