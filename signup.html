@@ -78,7 +78,7 @@
                                 <p class="keeplogin"> 
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
 									<label for="loginkeeping">Keep me logged in</label>
-								</p>
+								
 				  <?php
 session_start();
           $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
@@ -98,7 +98,7 @@ $_SESSION['email']= $_POST[email];
     { echo " Email or Password is inncorrect";  } 
 
 pg_close($db);
-?> 
+?> </p>
                                 <p class="login button"> 
                                      <input type="submit" value="Login" /> 
 								</p>
