@@ -14,7 +14,7 @@ $_SESSION['email']= $_POST[email];
     if($row > 0)
     { include_once("dashboard.html"); }
     else 
-    { include_once("signup.html"); } 
+    { echo " Email or Password is inncorrect"; } 
 
 pg_close($db);
 ?>
