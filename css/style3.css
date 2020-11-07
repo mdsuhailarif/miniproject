@@ -51,7 +51,7 @@ label{
     font-size: 33px;
     display: block;
     background: #ff8e6e;
-    padding:20px;
+    padding:0px;
     font-weight: 600;
 }
 .navbar-header h1 a span {
@@ -72,9 +72,14 @@ label{
 }
 .nav-contact-w3ls i.fa {
     color: #fff;
-    font-size: 25px;   
-    text-align: right;
-    margin-right: 1em;
+    font-size: 17px;
+    background: #d16d08;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: .5em;
 }
 .nav-contact-w3ls p {
     display: inline-block;
@@ -140,14 +145,14 @@ label{
 }
 
 .navbar-default {
-    background: none;
+    background: #fa9e00;
     border: none;
     margin: 0;
     min-height: inherit;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #99abd5;
-    background: none;
+    background: #fa9e00;
 }
 .navbar-nav > li {
    margin: 0 0.5em;
@@ -2799,7 +2804,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 		width: 100%;
 		text-align: center;
 		background: #000;
-		background: rgba(255,142,110,0.9);
+		background: rgb(255,142,110);
 	}
 	.navbar-right {
 		float: none!important;
@@ -2877,7 +2882,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 		font-size: 14px;
 	}
 	.nav-contact-w3ls {
-		margin-top: 25px;
+		margin-top: 0px;
 	}
 }
 @media(max-width: 667px){
@@ -3106,7 +3111,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 }
 @media(max-width: 384px){
 	.top-nav-text {
-		left: -65%;
+		left: -45%;
 	}
 	.slider-info h3, .slider-info h2, .slider-info h4 {
 		font-size: 1.7em;
