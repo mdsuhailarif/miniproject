@@ -14,7 +14,7 @@ $_SESSION['email']= $_POST[email];
     if($row > 0)
     { include_once("dashboard.html"); }
     else 
-    { include_once("signup.php"); }
+    { include_once("signup.html"); }
 
 pg_close($db);
 ?>
