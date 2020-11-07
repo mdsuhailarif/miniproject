@@ -15,9 +15,9 @@
 
    		$ret = pg_query( $sql);
    		if(!$ret) {
-   		   $message = "Email and/or Password incorrect.\\nTry again.";
+   		   $message = "Email is already registered.\\nTry again.";
   echo "<script type='text/javascript'>alert('$message');</script>";
-include_once("signup.html#toregister");
+header("location: signup.html#toregister");
    		} 
 		 else {
    		   header("location: signup.html ");
