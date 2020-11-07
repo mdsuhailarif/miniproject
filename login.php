@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-<<<<<<< HEAD
    $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    		$port        = "port = 5432";
    		$dbname      = "dbname = dcjrfn9ert59om";
@@ -11,9 +10,6 @@ session_start();
 
 	
    $db = pg_connect( "$host $port $dbname $credentials"  );
-=======
-   include("connect.php");
->>>>>>> 2edf520c10bff7b9dc2d1389fc1dcd4b11e68176
 
    /* Create a query statement */
    $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]') ");
