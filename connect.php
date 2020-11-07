@@ -17,7 +17,7 @@
    		if(!$ret) {
    		   $message = "Email is already registered.\\nTry again.";
   echo "<script type='text/javascript'>alert('$message');</script>";
-header("location: signup.html#toregister");
+include_once("signup.html#toregister");
    		} 
 		 else {
    		   header("location: signup.html ");
