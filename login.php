@@ -11,12 +11,15 @@ session_start();
 
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    $port        = "port = 5432";
    $dbname      = "dbname = dcjrfn9ert59om";
    $credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
 
 >>>>>>> parent of 7311972... patch
+=======
+>>>>>>> parent of a6e49a2... Update login.php
 =======
 >>>>>>> parent of a6e49a2... Update login.php
    $db = pg_connect( "$host $port $dbname $credentials"  );
