@@ -37,7 +37,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<h1><a href="Homepage.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
 					</div>
 					<div class="top-nav-text">
-						<div class="nav-contact-w3ls"><p> </p></div> 
+						<?php session_start();
+							while(isset($_SESSION["user"])) {
+							echo"<div class="nav-contact-w3ls"><i class="fa fa-user" aria-hidden="true"></i><p> &nbsp Welcome! ";
+							echo $_SESSION["user"];
+							}
+						?>
+						</p></div>
 					</div>
 					<!-- navbar-header -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
