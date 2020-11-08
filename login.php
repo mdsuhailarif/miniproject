@@ -1,5 +1,5 @@
 <?php
-session_start();	session_start();
+session_start();
 $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
 $port        = "port = 5432";
 $dbname      = "dbname = dcjrfn9ert59om";
@@ -10,7 +10,7 @@ $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and pass
 $row= pg_num_rows($qry);
 $_SESSION['email']= $_POST[email];
 if($row > 0)
- { hrader("location: dashboard.html"); }
+ {  header("location: dashboard.html"); }
 else 
  { $message = "Email and/or Password incorrect.\\nTry again.";
   echo "<script type='text/javascript'>alert('$message');</script>";
