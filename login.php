@@ -10,7 +10,7 @@ session_start();
    /* Create a query statement */
    $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]') ");
    $row= pg_num_rows($qry);
-$_SESSION['email']= $_POST[email];
+$_SESSION['user']= $row[0];
     if($row > 0)
     { include_once("dashboard.html"); }
     else 
