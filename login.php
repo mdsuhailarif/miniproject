@@ -10,7 +10,7 @@ $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and pass
 $row= pg_num_rows($qry);
 $_SESSION['email']= $_POST[email];
 if($row > 0)
- { include_once("dashboard.html"); }
+ { hrader("location: dashboard.html"); }
 else 
  { $message = "Email and/or Password incorrect.\\nTry again.";
   echo "<script type='text/javascript'>alert('$message');</script>";
