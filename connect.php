@@ -15,7 +15,9 @@
 
    		$ret = pg_query( $sql);
    		if(!$ret) {
-   		   echo "This E-Mail is already registered";
+   		$message = "Email is already registered.\\nTry again.";
+                echo "<script type='text/javascript'>alert('$message');</script>";
+                include_once("signup.html");
    		} 
 		 else {
    		   header("location: signup.html ");

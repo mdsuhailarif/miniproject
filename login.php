@@ -1,5 +1,6 @@
 <?php
 session_start();
+          $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    		$port        = "port = 5432";
    		$dbname      = "dbname = dcjrfn9ert59om";
    		$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
@@ -13,7 +14,9 @@ $_SESSION['email']= $_POST[email];
     if($row > 0)
     { include_once("dashboard.html"); }
     else 
-    { include_once("signup.html"); } 
+    { $message = "Email and/or Password incorrect.\\nTry again.";
+  echo "<script type='text/javascript'>alert('$message');</script>";
+include_once("signup.html"); }
 
 pg_close($db);
 ?>
