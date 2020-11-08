@@ -7,8 +7,8 @@ $credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d
 $db = pg_connect( "$host $port $dbname $credentials");
    /* Create a query statement */	
 $qry = pg_query($db,"SELECT * FROM logind WHERE email = '$_POST[email]' and password = md5('$_POST[password]') ");
-$row= pg_num_rows($qry);
-$_SESSION['email']= $_POST[email];
+$row= pg_fetch_row($qry);
+$_SESSION['user']= $row[0];
 if($row > 0)
  {  header("location: dashboard.html"); }
 else 
