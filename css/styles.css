@@ -39,7 +39,17 @@ body{
 } */
 
 
+.nav-item{
+  padding: 0 15px;
+}
 
+.nav-link{
+  font-family: 'Montserrat-light';
+}
+
+.navbar-brand{
+  padding: 0 0 5.5rem;
+}
 
 
 /* download-buttons */
@@ -152,14 +162,15 @@ p{
 }
 
 
-* footer */	
-#footer{	
-  background-color: #fff;	
-  text-align: center;	
-  padding: 7% 15%;	
-}	
-.social-icon{	
-  margin: 2% 2%;	
+
+/* footer */
+#footer{
+  background-color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+.social-icon{
+  margin: 2% 2%;
 }
 
 
