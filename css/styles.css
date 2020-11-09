@@ -163,16 +163,6 @@ p{
 
 
 
-/* footer */
-#footer{
-  background-color: #fff;
-  text-align: center;
-  padding: 7% 15%;
-}
-.social-icon{
-  margin: 2% 2%;
-}
-
 
 /* The screen (or content) of the device */
 .smartphone .content {
