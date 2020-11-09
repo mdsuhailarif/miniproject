@@ -134,14 +134,14 @@ input {
 	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
 } 
 
-/** the magic icon trick ! **/
+/** the magic icon **/
 [data-icon]:after {
     content: attr(data-icon);
     font-family: 'FontomasCustomRegular';
     color: rgb(255, 129, 0);
     position: absolute;
     left: 10px;
-    top: 50px;
+    top: 35px;
 	width: 30px;
 }
 
