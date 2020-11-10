@@ -5,7 +5,7 @@ body{
 	position:center;
 	font-family: 'Raleway', sans-serif;
 	background: url(../images/bgd4.png) ;
-	background-size: 100% 100%;
+	background-size: 100% auto;
 }
 body a{
     transition:0.5s all;
@@ -916,7 +916,7 @@ button.close {
 .bannerbottomright h4 {
     font-size: 22px;
     margin: 1em 0 0;
-    color: #444;
+    color: #C0C0C0;
     text-transform: capitalize;
 }
 .bannerbottomright i.fa {
