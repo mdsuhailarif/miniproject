@@ -916,12 +916,12 @@ button.close {
 .bannerbottomright h4 {
     font-size: 22px;
     margin: 1em 0 0;
-    color: #ffffff;
+    color:#fff;
     text-transform: capitalize;
 }
 .bannerbottomright i.fa {
     width: 45px;
-	color:#ff8e6e;
+	color:#fff;
 }
 
 /* //banner bottom */
