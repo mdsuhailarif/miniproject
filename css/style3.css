@@ -38,6 +38,12 @@ ul{
 label{
 	margin:0;
 }
+
+.bg{
+	background: url(../images/bgd4.png) ;
+	background-size: 100% auto;
+	}
+
 /*--header--*/
 .navbar-header h1 {
     text-align: center;
