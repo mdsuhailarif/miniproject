@@ -4,8 +4,6 @@ body{
 	background-color:#fff;
 	position:center;
 	font-family: 'Raleway', sans-serif;
-	background: url(../images/bgd4.png) ;
-	background-size: 100% auto;
 }
 body a{
     transition:0.5s all;
