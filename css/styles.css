@@ -102,9 +102,10 @@ p{
 
 .bottom-container{
   /* position: relative; */
+ img{
   width: 100%;
   hieght: auto;
-  
+  }
 
 }
 
