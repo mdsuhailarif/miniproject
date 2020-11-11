@@ -100,29 +100,9 @@ p{
 
 /* testimonials */
 
-.testimonials{
-  padding: 7% 15%;
-  text-align: center;
-  color: #fff;
-}
-
-.testi-image{
-  width: 50%;
-  border-radius: 100%;
-  margin: 20px;
-}
-
-.testi-text{
-  color: black;
-}
-
-.sevices-text{
-  padding: 5%;
-}
-
-.testimonial-image{
-  width: 300px;
-  height: 250px;
+.bottom-container{
+  /* position: relative; */
+  width: 100%;
 
 }
 
