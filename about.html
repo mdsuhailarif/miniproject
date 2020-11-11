@@ -1,0 +1,192 @@
+<?php if (!isset($_SESSION=['user'])){header("location: signup.html")}  ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TuriGo India</title>
+	<!--Icon-->
+  <link rel="shortcut icon" href="icon_1.png" type = "image/png" sizes="16*16" >	
+	<link rel="icon" href="icon_1.png" type = "image/png" sizes="16*16" >
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="travel,currier,transport,turigo,india" />
+<!--// Meta tag Keywords -->
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" /><!-- for testimonials -->
+
+<!-- css files -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+<link rel="stylesheet" href="css/style3.css" type="text/css" media="all" > <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body>
+<div class="header">
+		<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style= "opacity:0.3;">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a href="Homepage.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
+					</div>
+					<!-- navbar-header -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="hvr-underline-from-center active" href="Homepage.html">Home</a></li>
+						</ul>
+					</div>
+
+					<div class="clearfix"> </div>	
+				</nav>
+	</div>
+
+
+
+<!-- services section -->
+<div class="services" id="services">
+		<div class="heading">
+			<h2>Our Services</h2>
+		</div>
+	<div class="container">
+		<div class="servicegrids">
+			<div class="servicetopgrids">
+				<div class="col-md-4 servicegrid1">
+					<h5>01</h5><br><br>
+					<h4>Roadways Transport</h4>
+					<p>Best road transport services.<br> Book now!</p>
+				</div>
+			<div class="servicebottomgrids">
+				<div class="col-md-4 servicegrid1">
+					<h5>02</h5><br><br>
+					<h4>Logistic Management</h4>
+					<p>Reliable logistics services.<br> Join now !</p>
+				</div>
+				<div class="col-md-4 servicegrid1">
+					<h5>03</h5><br><br>
+					<h4>Delivery Unlimited</h4>
+					<p>Fast delivery services.<br> Order now!</p>
+				</div>
+				<div class="col-md-4 servicegrid1">
+					<h5>04</h5><br><br>
+					<h4>Fast & Safe Service</h4>
+					<p>Best in class with full costumer support.<br> Join now!</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- js-scripts -->					
+<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+<!-- //js -->	
+
+<!-- start-smoth-scrolling -->
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+<!-- start-smoth-scrolling -->
+
+<!-- Baneer-js -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager:false,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+<!-- //Baneer-js -->
+
+<!-- banner bottom video script -->
+<script src="js/simplePlayer.js"></script>
+			<script>
+				$("document").ready(function() {
+					$("#video").simplePlayer();
+				});
+</script>
+<!-- //banner bottom video script -->
+
+<!-- Stats-Number-Scroller-Animation-JavaScript -->
+				<script src="js/waypoints.min.js"></script> 
+				<script src="js/counterup.min.js"></script> 
+				<script>
+					jQuery(document).ready(function( $ ) {
+						$('.counter').counterUp({
+							delay: 100,
+							time: 1000
+						});
+					});
+				</script>
+<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+
+
+<!-- FlexSlider-JavaScript -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+						$('body').removeClass('loading');
+					}
+			});
+		});
+	</script>
+<!-- //FlexSlider-JavaScript -->
+
+<!-- //js-scripts -->
+</body>
+
+</html>

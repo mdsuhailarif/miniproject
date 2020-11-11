@@ -1,9 +1,15 @@
-#title{
-  background-color:#ff8e6e;
+.bg{
+	background: url(../images/bgd4.png) ;
+	background-size: 100% auto;
+	}
+
+
+.title{
   color:#fff;
+  padding: 7% 15%;
 }
 
-#features{
+.features{
   padding: 7% 15%;
 }
 
@@ -60,13 +66,14 @@ body{
 
 
 h3{
-  font-family: 'Montserrat-bold';
+  font-family: 'Montserrat';
+  color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 p{
-  font-family: 'Montserrat-black', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #8f8f8f;
 }
 
@@ -74,6 +81,8 @@ p{
 
 
 .feature-boxes{
+	background: transparent;
+	color: #fff;
   text-align: center;
   padding: 5%;
 }
@@ -91,11 +100,10 @@ p{
 
 /* testimonials */
 
-#testimonials{
+.testimonials{
   padding: 7% 15%;
   text-align: center;
   color: #fff;
-  background-color: #FF6347;
 }
 
 .testi-image{
@@ -123,7 +131,6 @@ p{
 /* press */
 
 #press{
-  background-color: #FF6347;
   text-align: center;
   padding: 3% 1%;
 }
@@ -140,7 +147,7 @@ p{
     text-align: center;
   }
 
-  #title{
+  .title{
     text-align: center;
   }
 }
@@ -149,29 +156,17 @@ p{
 
 /* cta */
 #cta{
-  background-color: #ff8e6e;
   text-align: center;
   padding: 7% 15%;
 }
 .cta-text{
   color: #fff;
   font-family: 'Montserrat-Black';
-  font-size: 2.5rem;
+  font-size: 4 rem;
   line-height: 1.5;
 
 }
 
-
-
-/* footer */
-#footer{
-  background-color: #fff;
-  text-align: center;
-  padding: 7% 15%;
-}
-.social-icon{
-  margin: 2% 2%;
-}
 
 
 /* The screen (or content) of the device */
@@ -194,3 +189,4 @@ p{
 	 margin: 0 auto;
 	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
 } }
+

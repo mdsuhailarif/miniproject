@@ -1,8 +1,8 @@
 body{
 	padding:0;
 	margin:0;
-	background:#fff;
-	position:relative;
+	background-color:#fff;
+	position:center;
 	font-family: 'Raleway', sans-serif;
 }
 body a{
@@ -38,6 +38,12 @@ ul{
 label{
 	margin:0;
 }
+
+.bg{
+	background: url(../images/bgd4.png) ;
+	background-size: 100% auto;
+	}
+
 /*--header--*/
 .navbar-header h1 {
     text-align: center;
@@ -50,8 +56,8 @@ label{
     text-decoration: none;
     font-size: 33px;
     display: block;
-    background: #ff8e6e;
-    padding:0px;
+    background: transparent;
+    padding:20px;
     font-weight: 600;
 }
 .navbar-header h1 a span {
@@ -72,14 +78,9 @@ label{
 }
 .nav-contact-w3ls i.fa {
     color: #fff;
-    font-size: 17px;
-    background: #d16d08;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    margin-right: .5em;
+    font-size: 25px;   
+    text-align: right;
+    margin-right: 1em;
 }
 .nav-contact-w3ls p {
     display: inline-block;
@@ -145,14 +146,14 @@ label{
 }
 
 .navbar-default {
-    background: #fa9e00;
+    background: none;
     border: none;
     margin: 0;
     min-height: inherit;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #99abd5;
-    background: #fa9e00;
+    background: none;
 }
 .navbar-nav > li {
    margin: 0 0.5em;
@@ -430,8 +431,9 @@ a.navbar-brand span {
     padding: 0px 0;
 }
 .header {
-    background:#ff8e6e;
+    background: url(../images/bgd3.jpg) ;
 	padding:0 2em;
+	margin: 1px;
 }
 /*--//header--*/
 /*--slider--*/
@@ -918,12 +920,12 @@ button.close {
 .bannerbottomright h4 {
     font-size: 22px;
     margin: 1em 0 0;
-    color: #444;
+    color:#fff;
     text-transform: capitalize;
 }
 .bannerbottomright i.fa {
     width: 45px;
-	color:#ff8e6e;
+	color:#fff;
 }
 
 /* //banner bottom */
@@ -1072,16 +1074,26 @@ section.slider {
     color: #fff;
 }
 /*-- //blog--*/
+
+#footer{
+  background: url(../images/bgd4.png);
+	background-size: 100% auto;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+
 /*-- footer --*/
 .agileits-w3layouts-footer{
-    background: #FF6347;
-    padding: 4em 0;
+    padding: 1px;
+	float: center;
 }
 .w3-agile-grid h5{
     text-transform: uppercase;
     margin: 0 0 1em 0;
     font-size: 25px;
-    color: #fff;
+    color: #000;
+	text-align: center;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -1089,19 +1101,23 @@ section.slider {
 	color: #b5b5b5;
     font-size: 1em;
     line-height: 1.8em;
+	text-align: center;
     margin: 2;
 }
 
 .footer-agileinfo-social {
     margin: 2em 0 0 0;
+	position: center;
 }
 .footer-agileinfo-social ul {
     padding: 0;
     margin: 2;
+	float: center
 }
 .footer-agileinfo-social ul li {
     display: inline-block;
     margin: 2 .5em 0 0;
+	float: center
 }
 .footer-agileinfo-social ul li a {
     color: #FFFFFF;
@@ -2804,7 +2820,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 		width: 100%;
 		text-align: center;
 		background: #000;
-		background: rgb(255,142,110);
+		background: rgba(57, 98, 104, 0.9);
 	}
 	.navbar-right {
 		float: none!important;
@@ -2882,7 +2898,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 		font-size: 14px;
 	}
 	.nav-contact-w3ls {
-		margin-top: 0px;
+		margin-top: 25px;
 	}
 }
 @media(max-width: 667px){
@@ -3040,7 +3056,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 @media(max-width: 414px){
 	.top-nav-text {
 		width: 100%;
-		left: -50%;
+		left: -70%;
 		top: 54%;
 	}
 	.navbar-toggle {
@@ -3111,7 +3127,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 }
 @media(max-width: 384px){
 	.top-nav-text {
-		left: -45%;
+		left: -65%;
 	}
 	.slider-info h3, .slider-info h2, .slider-info h4 {
 		font-size: 1.7em;

@@ -1,21 +1,23 @@
-
+<?php if (!isset($_SESSION=['user'])){header("location: signup.html")}  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Turigo</title>
+<title>TuriGo India</title>
+	<!--Icon-->
+  <link rel="shortcut icon" href="icon_1.png" type = "image/png" sizes="16*16" >	
+	<link rel="icon" href="icon_1.png" type = "image/png" sizes="16*16" >
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Transporters web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web Designs" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="travel,currier,transport,turigo,india" />
 <!--// Meta tag Keywords -->
 
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" /><!-- for testimonials -->
 
 <!-- css files -->
+<link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
-<link rel="stylesheet" href="css/style3.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/style3.css" type="text/css" media="all" > <!-- Style-CSS --> 
 <link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
 <!-- //css files -->
 
@@ -34,10 +36,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<h1><a href="Homepage.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
+						<h1><a href="dashboard.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
 					</div>
 					<div class="top-nav-text">
-						<div class="nav-contact-w3ls"><p> </p></div> 
+						<div class="nav-contact-w3ls"><p><i class="fa fa-user" aria-hidden="true"></i> Welcome!  <?php session_start();  echo $_SESSION['user'];   ?>
+							 </p>
+						</div> 
 					</div>
 					<!-- navbar-header -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,7 +49,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<li><a class="hvr-underline-from-center active" href="dashboard.html">Home</a></li>
 							<li><a href="services.html" class="hvr-underline-from-center">Services</a></li>
 							<li><a href="gallery.html" class="hvr-underline-from-center">Gallery</a></li>
-							<li><a href="contact.html" class="hvr-underline-from-center">Contact</a></li>
+							<li><a href="contact.html" class="hvr-underline-from-center">Contact Us</a></li>
 							<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 							
 						</ul>
@@ -55,6 +59,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</nav>
 	
 	</div>
+<div class="bg">
 <!-- Slider -->
 <div class="slider">
 	<div class="callbacks_container">
@@ -365,12 +370,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 
 <!-- footer -->
-	<footer>
+<footer id = "footer">
 		<div class="agileits-w3layouts-footer">
-			<div class="container">
+			<div class="row">
 				<div class="col-md-4 w3-agile-grid">
-					<h5>About Us</h5>
-					<p>We are India based transpot company.</p>
+				</div>
+				<div class="col-md-4 w3-agile-grid">
+				<h3>Contact Us</h3>
 					<div class="footer-agileinfo-social">
 						<ul>
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -379,17 +385,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<li><a href="#"><i class="fa fa-vk"></i></a></li>
 						</ul>
 					</div>
-				</div>
-				
-				<div class="col-md-4 w3-agile-grid">
-					<h5>Address</h5>
+					<br>
 					<div class="w3-address">
 						<div class="w3-address-grid">
 							<div class="w3-address-left">
 								<i class="fa fa-phone" aria-hidden="true"></i>
 							</div>
 							<div class="w3-address-right">
-				
+				                        <h6>Phone no.</h6><p>+91 00000000000</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -419,14 +422,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-		<div class="copyright">
+</div>		
+	</footer>
+	<!-- //footer -->
+<div class="copyright">
 			<div class="container">
 				<p>© 2020 Turigo. All rights reserved </p>
 			</div>
 		</div>
-	</footer>
-	<!-- //footer -->
-
 
 
 <!-- js-scripts -->					
