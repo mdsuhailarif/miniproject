@@ -100,19 +100,14 @@ p{
 
 /* testimonials */
 
-.bottom-container{
-  /* position: relative; */
-  width: 100%;
-  position: relative;
-  height: auto;
-
-}
 .testi-image{
+      text-align: center;
       width: 50%;
       border-radius: 100%;
       margin: 20px;
   }
   .testimonial-text{
+      text-align: center;
       line-height: 1.5;
       font-size: 3rem;
   }
