@@ -103,9 +103,19 @@ p{
 .bottom-container{
   /* position: relative; */
   width: 100%;
+  position: relative;
+  height: auto;
 
 }
-
+.testi-image{
+      width: 50%;
+      border-radius: 100%;
+      margin: 20px;
+  }
+  .testimonial-text{
+      line-height: 1.5;
+      font-size: 3rem;
+  }
 
 
 /* press */
