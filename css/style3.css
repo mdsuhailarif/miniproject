@@ -819,9 +819,15 @@ button.close {
     background: #ff8e6e;
 }
 .banner-form-agileinfo {
+	float: center;
+	position: absolute;
+	top: 55%;
+	left: 75%;
+	transform: translate(-50%,-50%);
     background: #fff;
     background: rgba(0, 0, 0, 0.54);
     padding: 3em 2em;
+	 z-index: 9;
 }
 .form-control {
     height: 40px;
