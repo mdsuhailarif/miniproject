@@ -68,26 +68,57 @@
 									<h5>Need To <span>Transport</span>?</h5>
 									<p>Enter Details</p>
 									<form action="#" method="post">
+									<script type="text/javascript">
+									function change(arr,arr2) {
+									var el = document.getElementById('sel1');
+									el.options.length = 0;
+									for(var i = 0; i< arr.length; i++ ) {
+									el.options[el.options.length] = new Option( arr[i], arr[i]);}
+									var el = document.getElementById('sel2');
+									el.options.length = 0;
+									if(arr[0]== "Transport From")
+									{arr[0] ="Transport to";}
+									else
+									{arr[0]="Travel To";}
+									for(var i = 0; i< arr.length; i++ ) {
+									el.options[el.options.length] = new Option( arr[i], arr[i]);}
+									var el = document.getElementById('sel3');
+									el.options.length = 0;
+									for(var i = 0; i< arr2.length; i++ ) {
+									el.options[el.options.length] = new Option( arr2[i], arr2[i]);}
+									}
+									</script>
 										<input type="text" class="email" name="name" placeholder="Name" required="">
 										<input type="tel" class="tel" name="tel" placeholder="Phone Number" required="">
-										<select class="form-control option-w3ls">
-												<option>Transport From</option>
-												<option>Agra</option>
-												<option>Aligarh</option>
-												<option>New Delhi</option>
-												<option>Noida</option>
-												<option>Gurugram</option>
-												<option>Jaipur</option>
+										<input type="radio" name="opt" id="r0" onclick='change(["Transport From", "Agra", "Aligarh","New Delhi","Noida","Gurugram","Jaipur"],["Transport By", "Min Truck","Tail Lift Truck","Train", "Aeroplane"])' checked="check"><label for="r0"> Transport  </label>&nbsp; &nbsp; &nbsp; &nbsp; 
+										<input type="radio" name="opt" id="r1" onclick='change(["Travel From",  "Agra", "Aligarh","New Delhi","Noida","Gurugram","Jaipur"],["Travel By", "Micro Car","Sedan","Hatchback","SUV", "Bus"])'><label for="r1"> Travel</label><br><br>
+										<select class="form-control option-w3ls" id="sel1">
+										<option>Transport from</option>
+										<option>Agra</option>
+										<option>Aligarh</option>
+										<option>New Delhi</option>
+										<option>Noida</option>
+										<option>Gurugram</option>
+										<option>Jaipur</option>
 										</select>
-										<select class="form-control option-w3ls">
-												<option>Transport To</option>
-												<option>Agra</option>
-												<option>Aligarh</option>
-												<option>New Delhi</option>
-												<option>Noida</option>
-												<option>Gurugram</option>
-												<option>Jaipur</option>
+										<select class="form-control option-w3ls" id="sel2">
+										<option>Transport To</option>
+										<option>Agra</option>
+										<option>Aligarh</option>
+										<option>New Delhi</option>
+										<option>Noida</option>
+										<option>Gurugram</option>
+										<option>Jaipur</option>
 										</select>
+										<select class="form-control option-w3ls" id="sel3">
+										<option>Transport By</option>
+										<option>Mini Truck</option>
+										<option>Tail Lift Trucks</option>
+										<option>Train</option>
+										<option>Aeroplane</option>
+										</select>
+										<label for="d">Date</label>
+										<input type="date" id="d" name="d">
 										<input type="submit" class="hvr-shutter-in-vertical" value="Get started">  	
 									</form>
 								</div>
