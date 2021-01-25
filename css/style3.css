@@ -911,6 +911,7 @@ button.close {
     margin: 0.5em 0 2em 0;
 }
 .bannerbottomright {
+	text-align: center;
     padding: 4em 6em 4em 4em;
 }
 .bannerbottomright h3 {
@@ -3277,7 +3278,10 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
 	}
 }
 /*--//responsive--*/
-
+.title{
+	color: #1f1e1e;
+	text-align: center;
+}
 .heading-title {
     margin-bottom: 100px;
 }
@@ -3285,7 +3289,6 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
     text-align: center;
 }
 .heading-title h3 {
-    margin-bottom: 0;
     letter-spacing: 2px;
     font-weight: normal;
 }
@@ -3297,7 +3300,7 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
-    color: #7e7e7e;
+    color: #1f1e1e;
 }
 .text-uppercase {
     text-transform: uppercase;
@@ -3381,24 +3384,25 @@ img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
     font-size: 16px;
 }
 .team-title {
+	float: center;
     position: static;
     padding: 20px 0;
     display: inline-block;
     letter-spacing: 2px;
     width: 100%;
+	text-align: center;
 }
 .team-title h5 {
-    margin-bottom: 0px;
-    display: block;
+	color:#1f1e1e;
+    text-transform: bold;
     text-transform: uppercase;
 }
 .team-title span {
     font-size: 12px;
     text-transform: uppercase;
-    color: #a5a5a5;
+    color: #1f1e1e;
     letter-spacing: 1px;
 }
-
 
 
 
