@@ -12,4 +12,7 @@ EOF;
 
 
 
+   pg_close($db);
+include_once("Homepage.html");
+
 ?>
