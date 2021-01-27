@@ -123,42 +123,56 @@
           <th scope="row">1</th>
           <td>Yash Travels</td>
           <td>🌟🌟🌟🌟</td>
-          <td><a href="#cta"><input type="button" name="agency" value="Yash Travels" class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
+          <td><a href="#cta"><button type="button" onClick="agency(1)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Noida Specials</td>
           <td>🌟🌟🌟</td>
-          <td><a href="#cta"><input type="button" name="agency" value="Noida Specials" class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
+          <td><a href="#cta"><button type="button" onClick="agency(2)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
         <tr>
           <th scope="row">3</th>
           <td>Travel point</td>
           <td>🌟🌟🌟</td>
-         <td><a href="#cta"><input type="button" name="agency" value="Travel point"class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
+         <td><a href="#cta"><button type="button" onClick="agency(3)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Balaji Travels</td>
           <td>🌟🌟🌟</td>
-          <td><a href="#cta"><input type="button" name="agency" value="Balaji Travels" class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
+          <td><a href="#cta"><button type="button" onClick="agency(4)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Star Tour and travels</td>
           <td>🌟🌟</td>
-          <td><a href="#cta"><input type="button" name="agency" value="Star Tour and travels" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="#cta"><button type="button" onClick="agency(5)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
       </tbody>
 	  </form>
     </table>
 	</div>
-  </section>
+</section>
+
+function agency($a){
+	if($a==1)
+	{$agency ="Yash Travels";}
+	elseif($a==2)
+	{$agency="Noida Specials";}
+	elseif($a==3)
+	{$agency="Travel point";}
+	elseif($a==4)
+	{$agency="Balaji Travels";}
+	else($a==5)
+	{$agency="Star Tour and travels";}
+}
+  
 <?php
 
 		include_once("book.php");				
         $sql =<<<EOF
-		UPDATE logind SET agency='$_POST[agency]' WHERE email='$_POST[email]';
+		UPDATE logind SET agency='$agency' WHERE email='$_POST[email]';
 EOF;
 		$ret = pg_query($sql);
    		
