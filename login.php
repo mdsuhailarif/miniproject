@@ -35,6 +35,16 @@ $sql =<<<EOF
 EOF;
 
 ret = pg_query($sql);
+$ret = pg_query($sql);
+   		if(!$ret) {
+   		
+                echo "Success";
+                include_once("signup.html");
+   		} 
+		 else {
+           echo "Success";
+   		   include_once("signup.html");
+   		}
 
    pg_close($db);
 
