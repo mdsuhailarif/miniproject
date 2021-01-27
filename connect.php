@@ -8,10 +8,10 @@
    		$db = pg_connect( "$host $port $dbname $credentials");
 
  
-			$create ="CREATE TABLE IF NOT EXISTS logind ( username character varying(25) NOT NULL, email character varying(255) NOT NULL UNIQUE,password character varying(255) NOT NULL );)";
+			$create ="CREATE TABLE IF NOT EXISTS logind ( username TEXT NOT NULL, email TEXT NOT NULL UNIQUE,password TEXT NOT NULL );)";
         	$sql ="INSERT INTO logind VALUES ('$_POST[username]','$_POST[email]',md5('$_POST[password]'))";
-		pg_query( $db,$create);
-   		$ret = pg_query($db, $sql);
+		$ret = pg_query($create);
+   		pg_query($sql);
    		if(!$ret) {
    		$message = "Email is already registered.\\nTry again.";
                 echo "<script type='text/javascript'>alert('$message');</script>";
