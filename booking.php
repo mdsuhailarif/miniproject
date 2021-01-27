@@ -123,7 +123,7 @@
           <th scope="row">1</th>
           <td>Yash Travels</td>
           <td>🌟🌟🌟🌟</td>
-          <td><a href="#cta"><input type="button" name="agency" value="Yash Travels" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="#cta"><input type="button" name="agency" value="Yash Travels" class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
         </tr>
         <tr>
           <th scope="row">2</th>
