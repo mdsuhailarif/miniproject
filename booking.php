@@ -27,28 +27,33 @@
 
 <body>
 
-  <section id="title">
+ <div class="header">
+		<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style= "opacity:0.3;">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a href="Homepage.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
+					</div>
+					<div class="top-nav-text">
+						<div class="nav-contact-w3ls"><p> </p></div> 
+					</div>
+					<!-- navbar-header -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="hvr-underline-from-center active" href="dashboard.html">Home</a></li>
+							<li><a href="contact.html" class="hvr-underline-from-center">Help</a></li>
+							<li><a href="#footer" class="hvr-underline-from-center">Contact Us</a></li>
+							
+						</ul>
+					</div>
 
-    <!-- Nav Bar -->
-    <div class="container-fluid">
-
-      <nav class="navbar navbar-expand-lg navbar-dark ">
-
-        <a href="http://turigo.herokuapp.com/dashboard.html"><img class="navbar-brand rounded-sm logo" src="images/logo.png" alt="my-logo"></a>
-       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="http://turigo.herokuapp.com/dashboard.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://turigo.herokuapp.com/services.html">Help</a>
-            </li>
-
-          </ul>
-        </div>
-      </nav>
-</section>
+					<div class="clearfix"> </div>	
+				</nav>
+	 </div>
 <div class="bg">
 
       <!-- Title -->
