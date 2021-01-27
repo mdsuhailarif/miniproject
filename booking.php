@@ -57,7 +57,7 @@
 <div class="bg">
 
       <!-- Title -->
-	<section class="id">
+	<section id="title">
       <div class="row">
         <div class="col-lg-6 First-sec">
           <h1 class="main-text">Availiable Transports.</h1>
