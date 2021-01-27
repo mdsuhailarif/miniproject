@@ -12,7 +12,7 @@ $sql =<<<EOF
     EMAIL TEXT  NOT NULL UNIQUE Primary Key,
     PASSWORD TEXT); 
 EOF;
-pg_query($sql);
+ret= pg_query($sql);
 
    pg_close($db);
 include_once("Homepage.html");
