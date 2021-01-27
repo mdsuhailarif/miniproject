@@ -27,7 +27,7 @@
 
 <body>
 
- <div class="header">
+<div class="header">
 		<nav class="navbar navbar-default">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style= "opacity:0.3;">
@@ -36,24 +36,29 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<h1><a href="Homepage.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
+						<h1><a href="dashboard.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
 					</div>
 					<div class="top-nav-text">
-						<div class="nav-contact-w3ls"><p> </p></div> 
+						<div class="nav-contact-w3ls"><p><i class="fa fa-user" aria-hidden="true"></i> Welcome!
+							 </p>
+						</div> 
 					</div>
 					<!-- navbar-header -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a class="hvr-underline-from-center active" href="dashboard.html">Home</a></li>
-							<li><a href="contact.html" class="hvr-underline-from-center">Help</a></li>
-							<li><a href="#footer" class="hvr-underline-from-center">Contact Us</a></li>
+							<li><a href="services.html" class="hvr-underline-from-center">Services</a></li>
+							<li><a href="gallery.html" class="hvr-underline-from-center">Gallery</a></li>
+							<li><a href="contact.html" class="hvr-underline-from-center">Contact Us</a></li>
+							<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 							
 						</ul>
 					</div>
 
 					<div class="clearfix"> </div>	
 				</nav>
-	 </div>
+	
+	</div>
 <div class="bg">
 
       <!-- Title -->
@@ -145,6 +150,7 @@
         </tr>
       </tbody>
     </table>
+	</div>
   </section>
 
   <!-- Payment -->
@@ -231,8 +237,7 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
-</div>		
+		</div>	
 	</footer>
 	<!-- //footer -->
   <!-- //footer -->
