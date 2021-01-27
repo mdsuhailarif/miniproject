@@ -12,7 +12,14 @@ $sql =<<<EOF
     EMAIL TEXT  NOT NULL UNIQUE Primary Key,
     PASSWORD TEXT); 
 EOF;
-
+ 
+$ret = pg_query( $sql);
+   if(!$ret) {
+      echo "Error";
+   }
+  else {
+      echo "Table created successfully\n";
+   }
    pg_close($db);
 include_once("Homepage.html");
 
