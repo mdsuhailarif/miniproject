@@ -6,9 +6,8 @@
   <title>Bookings-TuriGo India</title>
   <link rel="stylesheet" href="css/styles_bookings.css">
  <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 <link rel="stylesheet" href="css/style3.css" type="text/css" media="all" > <!-- Style-CSS --> 
-<link rel="stylesheet" href="css/font-awesome.css"> 
+
 
 
   <!-- Font-awesome -->
