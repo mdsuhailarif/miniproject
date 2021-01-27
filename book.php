@@ -13,9 +13,8 @@
 EOF;
 		$ret = pg_query($sql);
    		if(!$ret) {
-   		$message = "Invalid Details!.\\nTry again.";
-                echo "<script type='text/javascript'>alert('$message');</script>";
-                include_once("dashboard.php");
+   		$message = "Invalid Details!\\nTry again";
+                echo "<script type='text/javascript'>alert('$message');</script>"; include_once("dashboard.php");
    		} 
 		 else {echo"success";
    		   include_once("location: booking.php ");
