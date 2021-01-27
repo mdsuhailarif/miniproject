@@ -59,11 +59,11 @@
 <div class="bg">
 
       <!-- Title -->
-	<div class=title">
+	<div class="title">
       <div class="row">
         <div class="col-lg-6 First-sec">
           <h1 class="main-text">Availiable Transports.</h1>
-          <p>Scoll down to check out the transport services near you, select then proceed.</p>
+          <p>Scoll down to check out the transport services near you,<br> select then proceed.</p>
           <a href="http://turigo.herokuapp.com/dashboard.html"><button type="button" class="btn btn-danger btn-lg download-button"><i class="fa fa-home" aria-hidden="true"></i> Home</button></a>
         <a href="#features"><button type="button" class="btn btn-outline-danger btn-lg download-button" ><i class="fa fa-car" aria-hidden="true"></i> Availiable Bookings</button></a>
           
@@ -123,31 +123,31 @@
           <th scope="row">1</th>
           <td>Yash Travels</td>
           <td>🌟🌟🌟🌟</td>
-          <td><a href="#cta"><button type="button" onClick="agency(1)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.html"><button type="button" onClick="agency(1)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Noida Specials</td>
           <td>🌟🌟🌟</td>
-          <td><a href="#cta"><button type="button" onClick="agency(2)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.html"><button type="button" onClick="agency(2)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
         <tr>
           <th scope="row">3</th>
           <td>Travel point</td>
           <td>🌟🌟🌟</td>
-         <td><a href="#cta"><button type="button" onClick="agency(3)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+         <td><a href="payment.html"><button type="button" onClick="agency(3)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Balaji Travels</td>
           <td>🌟🌟🌟</td>
-          <td><a href="#cta"><button type="button" onClick="agency(4)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.html"><button type="button" onClick="agency(4)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Star Tour and Travels</td>
           <td>🌟🌟</td>
-          <td><a href="#cta"><button type="button" onClick="agency(5)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.html"><button type="button" onClick="agency(5)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
       </tbody>
 	  </form>
