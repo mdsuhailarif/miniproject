@@ -57,6 +57,7 @@
 <div class="bg">
 
       <!-- Title -->
+	<section class="id">
       <div class="row">
         <div class="col-lg-6 First-sec">
           <h1 class="main-text">Availiable Transports.</h1>
@@ -92,7 +93,7 @@
             </div>
           </div>
         </div>
-  
+  </section>
 
   <!-- Services -->
 
