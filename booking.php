@@ -195,7 +195,7 @@ EOF;
 		
    /* Create a query statement */	
 $qry = pg_query($db,"SELECT username,daa,frm,too FROM logind ");
-$row= pg_fetch_row($qry);
+$rs= pg_fetch_row($qry);
 while ($row = pg_fetch_row($rs))  	
 			 { echo "<tr><th>"; echo "$row[0]"; echo "</th> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>"; }
 			echo"</tbody> </table>";
