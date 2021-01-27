@@ -48,7 +48,7 @@
           </ul>
         </div>
       </nav>
-
+</section>
 <div class="bg">
 
       <!-- Title -->
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-  </section>
+  
 
   <!-- Services -->
 
