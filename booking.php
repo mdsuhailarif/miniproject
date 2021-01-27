@@ -59,7 +59,7 @@
 <div class="bg">
 
       <!-- Title -->
-	<div class=title">
+	<div class="title">
       <div class="row">
         <div class="col-lg-6 First-sec">
           <h1 class="main-text">Availiable Transports.</h1>
