@@ -8,7 +8,7 @@
    		$db = pg_connect( "$host $port $dbname $credentials");
 
  
-			$create ="CREATE TABLE IF NOT EXISTS logind ( username TEXT NOT NULL, email TEXT NOT NULL UNIQUE,password TEXT NOT NULL );)";
+			$create ="CREATE TABLE logind ( username TEXT NOT NULL, email TEXT NOT NULL UNIQUE,password TEXT NOT NULL );)";
 			
 			$ret = pg_query($create);
 			
