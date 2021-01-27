@@ -7,11 +7,8 @@
 
    		$db = pg_connect( "$host $port $dbname $credentials");
 		
-		$sql1 =<<<EOF
-   ALTER TABLE logind
-   (ADD COLUMN NO TEXT,ADD COLUMN FROM TEXT,ADD COLUMN TO TEXT,ADD COLUMN BY TEXT,ADD COLUMN D DATE); 
-EOF;
-		$ret = pg_query($sql1);
+		$sql =" ALTER TABLE logind ADD COLUMN NO TEXT,ADD COLUMN FROM TEXT,ADD COLUMN TO TEXT,ADD COLUMN BY TEXT,ADD COLUMN D DATE; "
+		$ret = pg_query($sql);
    		if(!$ret) {
                 echo "error";
                 include_once("dashboard.html");
