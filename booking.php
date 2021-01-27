@@ -158,48 +158,6 @@
 </section>
   
 
-
-<!-- Payment -->
-
-  <section id="cta" class="coloured-section">
-
-    <h3 class="main-text">Confirm your Booking</h3>
-    <table class="table table-striped table-dark">
-      <thead>
-        <tr>
-          <th scope="col">Username</th>
-          <th scope="col">Date</th>
-          <th scope="col">From</th>
-          <th scope="col">To</th>
-          <th scope="col">Service Provider</th>
-        </tr>
-      </thead>
-      <tbody>
-	  <?php
-		$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
-   		$port        = "port = 5432";
-   		$dbname      = "dbname = dcjrfn9ert59om";
-   		$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
-
-   		$db = pg_connect( "$host $port $dbname $credentials");
-		
-   /* Create a query statement */	
-$qry = pg_query($db,"SELECT * FROM logind ");
-$rs= pg_fetch_row($qry);
-while ($row = pg_fetch_row($rs))  	
-			 { echo "<tr><th>"; echo "$row[0]"; echo "</th> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>"; }
-			echo"</tbody> </table>";
-pg_close($db);		 
-
-?>
-      
-    <p>The pre-booking amount is non-refundable.</p>
-    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GTVAXGYgLLiTyK" async> </script> </form>
-    
-
-  </section>
-
-
 <!-- footer -->
 <footer id = "footer">
 		<div class="agileits-w3layouts-footer">
