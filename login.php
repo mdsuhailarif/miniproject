@@ -13,7 +13,6 @@ $sql =<<<EOF
     FROM TEXT, TO TEXT,BY TEXT,D DATE); 
 EOF;
 
-ret = pg_query($sql);
 $ret = pg_query($sql);
    		if(!$ret) {
    		
