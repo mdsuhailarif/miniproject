@@ -10,7 +10,12 @@ $sql =<<<EOF
    CREATE TABLE IF NOT EXISTS logind
    (USERNAME CHAR(100) ,
     EMAIL TEXT  NOT NULL UNIQUE Primary Key,
-    PASSWORD TEXT); 
+    PASSWORD TEXT
+    NO TEXT,
+	 FROM TEXT,
+	 TO TEXT,
+	 BY TEXT,
+	 D DATE;); 
 EOF;
 
 $ret=pg_query($sql);
