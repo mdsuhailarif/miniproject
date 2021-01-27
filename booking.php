@@ -156,13 +156,6 @@
   </section>
 <?php
 
-		$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
-   		$port        = "port = 5432";
-   		$dbname      = "dbname = dcjrfn9ert59om";
-   		$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
-
-   		$db = pg_connect( "$host $port $dbname $credentials");
-
 		include_once("book.php");				
         $sql =<<<EOF
 		UPDATE logind SET agency='$_POST[agency]' WHERE email='$_POST[email]';
@@ -187,13 +180,18 @@ EOF;
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">Kundan kumar</th>
-          <td>29 jan 2021</td>
-          <td>Noida</td>
-          <td>Jaipur</td>
-          <td>Travel Point</td>
-        </tr>
+	  <?php
+include_once("book.php");
+
+   /* Create a query statement */	
+$qry = pg_query($db,"SELECT * FROM logind WHERE email = '$email'");
+$row= pg_fetch_row($qry);
+while ($row = pg_fetch_row($rs))  	
+			 { echo "<tr><th>"; echo "$row[0]"; echo "</th> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>"; }
+		 
+pg_close($db);		 
+
+?>
       </tbody>
     </table>
     <p>The pre-booking amount is non-refundable.</p>
