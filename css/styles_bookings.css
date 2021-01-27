@@ -227,23 +227,4 @@ p{
 .w3-address-grid:nth-child(2){
 	margin:1em 0;
 }
-.copyright{
-	padding:1.5em 0;
-	text-align:center;
-	background:#212121;
-    background: #151515;
-}
-.copyright p{
-	color:#b5b5b5;
-	font-size:1em;
-	margin:0;
-    letter-spacing: 1px;
-}
-.copyright p a{
-    color: #ff8e6e;
-    text-decoration: none;
-}
-.copyright p a:hover{
-	color:#FFFFFF;	
-}
-/*-- //footer --*/
+
