@@ -7,11 +7,12 @@ $host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
 $sql =<<<EOF
-   CREATE TABLE IF NOT EXISTS logind
-   (USERNAME CHAR(100) ,
-    EMAIL TEXT  NOT NULL UNIQUE Primary Key,
-    PASSWORD TEXT); 
+   CREATE TABLE logind (USERNAME CHAR(100) , EMAIL TEXT  NOT NULL UNIQUE Primary Key, PASSWORD TEXT, N TEXT, FRM TEXT, TOO TEXT, BYE TEXT, DA DATE); 
 EOF;
+
+$ret=pg_query($sql);
+if(!$ret){echo"error";}
+
    pg_close($db);
 include_once("Homepage.html");
 
