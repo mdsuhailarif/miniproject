@@ -158,18 +158,8 @@
 </section>
   
 
-		<?php
 
-		include_once("book.php");				
-        $sql =<<<EOF
-		UPDATE logind SET agency='$agency' WHERE email='$email';
-EOF;
-		$ret = pg_query($sql);
-   		
-   		pg_close($db);
-?>
-
-  <!-- Payment -->
+<!-- Payment -->
 
   <section id="cta" class="coloured-section">
 
@@ -194,7 +184,7 @@ EOF;
    		$db = pg_connect( "$host $port $dbname $credentials");
 		
    /* Create a query statement */	
-$qry = pg_query($db,"SELECT username,da,frm,too FROM logind ");
+$qry = pg_query($db,"SELECT * FROM logind ");
 $rs= pg_fetch_row($qry);
 while ($row = pg_fetch_row($rs))  	
 			 { echo "<tr><th>"; echo "$row[0]"; echo "</th> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>"; }
