@@ -7,7 +7,7 @@
 
    		$db = pg_connect( "$host $port $dbname $credentials");
 
-						
+		$email=$_POST[email];			
         $sql =<<<EOF
 		UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]' WHERE email='$_POST[email]';
 EOF;
@@ -18,7 +18,7 @@ EOF;
                 echo "<script type='text/javascript'>alert('$message');</script>";
 				include_once("dashboard.html");
    		} 
-		 else {echo"success";
+		 else {
    		   include_once("booking.php"); }
 
    		pg_close($db);
