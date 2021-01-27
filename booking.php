@@ -117,42 +117,60 @@
           <th scope="col">Confirm Booking</th>
         </tr>
       </thead>
+	  <form action="#" method="Post">
       <tbody>
         <tr>
           <th scope="row">1</th>
           <td>Yash Travels</td>
           <td>🌟🌟🌟🌟</td>
-          <td><a href="#cta"><button type="button" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="#cta"><input type="button" name="agency" value="Yash Travels" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Noida Specials</td>
           <td>🌟🌟🌟</td>
-          <td><a href="#cta"><button type="button" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="#cta"><input type="button" name="agency" value="Noida Specials" class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
         </tr>
         <tr>
           <th scope="row">3</th>
           <td>Travel point</td>
           <td>🌟🌟🌟</td>
-         <td><a href="#cta"><button type="button" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+         <td><a href="#cta"><input type="button" name="agency" value="Travel point"class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Balaji Travels</td>
           <td>🌟🌟🌟</td>
-          <td><a href="#cta"><button type="button" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="#cta"><input type="button" name="agency" value="Balaji Travels" class="btn btn-outline-success btn-lg download-button">Proceed</a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Star Tour and travels</td>
           <td>🌟🌟</td>
-          <td><a href="#cta"><button type="button" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="#cta"><input type="button" name="agency" value="Star Tour and travels" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
       </tbody>
+	  </form>
     </table>
 	</div>
   </section>
+<?php
 
+		$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
+   		$port        = "port = 5432";
+   		$dbname      = "dbname = dcjrfn9ert59om";
+   		$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
+
+   		$db = pg_connect( "$host $port $dbname $credentials");
+
+		include_once("book.php");				
+        $sql =<<<EOF
+		UPDATE logind SET agency='$_POST[agency]' WHERE email='$_POST[email]';
+EOF;
+		$ret = pg_query($sql);
+   		
+   		pg_close($db);
+?>
   <!-- Payment -->
 
   <section id="cta" class="coloured-section">
