@@ -67,7 +67,7 @@
 	<div class="banner-form-agileinfo">
 									<h5>Need To <span>Transport</span>?</h5>
 									<p>Enter Details</p>
-									<form action="#" method="post">
+									<form action="book.php" method="post">
 									<script type="text/javascript">
 									function change(arr,arr2) {
 									var el = document.getElementById('sel1');
@@ -88,11 +88,11 @@
 									el.options[el.options.length] = new Option( arr2[i], arr2[i]);}
 									}
 									</script>
-										<input type="text" class="email" name="name" placeholder="Name" required="">
-										<input type="tel" class="tel" name="tel" placeholder="Phone Number" required="">
+										<input id="email" type="text" class="name" name="email" placeholder="email" required="">
+										<input id="n" type="text" class="name" name="n" placeholder="Phone Number" required="">
 										<input type="radio" name="opt" id="r0" onclick='change(["Transport From", "Agra", "Aligarh","New Delhi","Noida","Gurugram","Jaipur"],["Transport By", "Min Truck","Tail Lift Truck","Train", "Aeroplane"])' checked="check"><label for="r0"> Transport  </label>&nbsp; &nbsp; &nbsp; &nbsp; 
 										<input type="radio" name="opt" id="r1" onclick='change(["Travel From",  "Agra", "Aligarh","New Delhi","Noida","Gurugram","Jaipur"],["Travel By", "Micro Car","Sedan","Hatchback","SUV", "Bus"])'><label for="r1"> Travel</label><br><br>
-										<select class="form-control option-w3ls" id="sel1">
+										<select class="form-control option-w3ls" id="sel1" name="frm">
 										<option>Transport from</option>
 										<option>Agra</option>
 										<option>Aligarh</option>
@@ -101,7 +101,7 @@
 										<option>Gurugram</option>
 										<option>Jaipur</option>
 										</select>
-										<select class="form-control option-w3ls" id="sel2">
+										<select class="form-control option-w3ls" id="sel2" name="too">
 										<option>Transport To</option>
 										<option>Agra</option>
 										<option>Aligarh</option>
@@ -110,7 +110,7 @@
 										<option>Gurugram</option>
 										<option>Jaipur</option>
 										</select>
-										<select class="form-control option-w3ls" id="sel3">
+										<select class="form-control option-w3ls" id="sel3" name="bye">
 										<option>Transport By</option>
 										<option>Mini Truck</option>
 										<option>Tail Lift Trucks</option>
@@ -118,8 +118,8 @@
 										<option>Aeroplane</option>
 										</select>
 										<label for="d">Date</label>
-										<input type="date" id="d" name="d"><br>
-										<input type="submit" class="hvr-shutter-in-vertical" value="Get started">  	
+										<input type="date" id="d" name="da"><br>
+										<input type="submit" class="hvr-shutter-in-vertical" value="Get started"> 
 									</form>
 								</div>
 		<ul class="rslides" id="slider">
@@ -319,8 +319,8 @@
 					<i class="fa fa-fighter-jet" aria-hidden="true"></i>
 				</div>
 				<div class="counterinfo">
-					<p class="counter">180</p> 
-					<h3>International Service</h3>
+					<p class="counter">100</p> 
+					<h3>National Service</h3>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -330,7 +330,7 @@
 					<i class="fa fa-calendar" aria-hidden="true"></i>
 				</div>
 				<div class="counterinfo">
-					<p class="counter">20</p>
+					<p class="counter">2</p>
 					<h3>Years Of Service</h3>
 				</div>
 				<div class="clearfix"> </div>

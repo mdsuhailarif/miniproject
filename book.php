@@ -6,21 +6,21 @@
    		$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
 
    		$db = pg_connect( "$host $port $dbname $credentials");
-
-						
-        $sql ="INSERT INTO logind VALUES ('$_POST[username]','$_POST[email]',md5('$_POST[password]'))";
+		
+		$email=$_POST[email];
+		
+        $sql =<<<EOF
+		UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]' WHERE email='$_POST[email]';
+EOF;
 		$ret = pg_query($sql);
-   		if(!$ret) {
-   		$message = "Email is already registered.\\nTry again.";
+   		if(!$ret) 
+		{
+				$message = "Invalid Details!\\nTry again";
                 echo "<script type='text/javascript'>alert('$message');</script>";
-                include_once("signup.html");
+				include_once("dashboard.html");
    		} 
 		 else {
-   		   header("location: signup.html ");
-   		}
+   		   include_once("booking.php"); }
 
-   		pg_close($db);
-
+   		
 ?>
-
-  

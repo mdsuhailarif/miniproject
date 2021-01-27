@@ -1,10 +1,9 @@
+.bg{
+	background: url(../images/bgd4.png) ;
+	background-size: 100% auto;
+	color:#fff;
+	}
 
-  /* title section */
-  #title{
-    background: #ff884b;
-    padding: 1% 2%;
-    text-align: left;
-  }
    /* features section */
 
    #features{
@@ -12,7 +11,7 @@
      padding: 2% 15%;
    }
   .icon{
-    color:#ff4c68;
+    color:#fff;
     margin-bottom: 1rem;
   }
   .icon:hover{
@@ -41,6 +40,10 @@
 
   }
 
+p{
+	color:#fff;
+}
+
   /* Heding H1 and Get-started button */
   .First-sec{
     padding: 2% 0 10% 3%;
@@ -65,14 +68,6 @@
 
 
 
-  /* footer */
-  #footer{
-    padding: 4% 15%;
-    text-align: center;
-  }
-  .social-icon{
-    margin: 2% 2%;
-  }
 
   /* Heding and cta H1 text */
   .main-text {
@@ -81,45 +76,155 @@
   padding: 10px 0px;
 }
 
-/*copyright*/
-.copyright{
-  text-align: center;
-  background-color: black;
-  padding: 2% 5%;
-  color: #fff;
+*-- footer --*/
+.agileits-w3layouts-footer{
+    padding: 1px;
+	float: center;
+}
+.w3-agile-grid h5{
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+    font-size: 25px;
+    color: #000;
+	text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.w3-agile-grid p{
+	color: #b5b5b5;
+    font-size: 1em;
+    line-height: 1.8em;
+	text-align: center;
+    margin: 2;
 }
 
-
-
-
-
-
-
-
-/*payment page styles*/
-
-
- /*title section*/
- #title{
- 	padding: ;
- }
-
- /*payment_sec*/
- #payment_sec{
- 	text-align:center;
- 	padding: 2% 7%;
- }
-
-
-/*copyright*/
-.copyright{
-  text-align: center;
-  background-color: black;
-  padding: 2% 5%;
-  color: #fff;
+.footer-agileinfo-social {
+    margin: 2em 0 0 0;
+	position: center;
+}
+.footer-agileinfo-social ul {
+    padding: 0;
+    margin: 2;
+	float: center
+}
+.footer-agileinfo-social ul li {
+    display: inline-block;
+    margin: 2 .5em 0 0;
+	float: center
+}
+.footer-agileinfo-social ul li a {
+    color: #FFFFFF;
+    text-align: center;
+}
+.footer-agileinfo-social ul li a i.fa {
+    height: 35px;
+    width: 35px;
+    border: solid 2px #212121;
+    line-height: 35px;
+    background: #212121;
+    color: #FFFFFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.footer-agileinfo-social ul li a i.fa.fa-facebook:hover {
+	border: solid 2px #3b5998;
+	background:#3b5998;
+    color: #FFFFFF;
+}
+.footer-agileinfo-social ul li a i.fa.fa-twitter:hover{
+	border: solid 2px #55acee;
+	background:#55acee;
+	color: #FFFFFF;
+}
+.footer-agileinfo-social ul li a i.fa.fa-rss:hover{
+	border: solid 2px #f26522;
+	background:#f26522;
+	color: #FFFFFF;
+}
+.footer-agileinfo-social ul li a i.fa.fa-vk:hover{
+	border: solid 2px #45668e;
+	background:#45668e;
+	color: #FFFFFF;
+}
+.w3ls-post-img{
+	float:left;
+	width:25%;
+}
+.w3ls-post-img a img{
+	width:100%;
+}
+.w3ls-post-info{
+	float:right;
+	width:70%;
+}
+.w3ls-post-info h6{
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.w3ls-post-info h6 a{
+	color:#FFFFFF;
+	margin:0;
+	text-decoration:none;
+}
+.w3ls-post-info h6 a:hover{
+    color: #FF5722;
+}
+.w3ls-post-info h6 a:focus{
+	outline:none;
+	text-decoration:none;
+}
+.w3ls-post-info p{
+	color: #b5b5b5;
+    font-size: .9em;
+    margin: 1em 0 0 0;
+}
+.w3ls-post-grid:nth-child(2), .w3ls-post-grid:nth-child(3) {
+    margin: 1em 0;
+}
+.w3-address-grid{
+    background: #212121;
+    padding: 1em;
+}
+.w3-address-left{
+	float:left;
+	width:10%;
+}
+.w3-address-left i.fa.fa-phone,.w3-address-left i.fa.fa-envelope,.w3-address-left i.fa.fa-map-marker{
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+.w3-address-right{
+	float: right;
+    width: 87%;
+}
+.w3-address-right h6{
+	color: #FFFFFF;
+    font-size: 1em;
+    margin: 0;
+    font-weight: 400;
+}
+.w3-address-right p{
+	color:#b5b5b5;
+	margin:1em 0 0 0;
+	font-size:1em;
+}
+.w3-address-right p a{
+	color:#b5b5b5;
+	text-decoration:none;
+}
+.w3-address-right p a:hover{
+	color:#e01f3d;
+}
+.w3-address-right p span{
+	display:block;
+	margin:.5em 0;
+}
+.w3-address-grid:nth-child(2){
+	margin:1em 0;
 }
 
-/*payment_cards*/
-.payment_options{
-	padding: 2% 5%;
-}
