@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Bookings-TuriGo India</title>
   <link rel="stylesheet" href="css/styles_bookings.css">
+  <link rel="stylesheet" href="css/style3.css" type="text/css" media="all" > <!-- Style-CSS --> 
+
 
   <!-- Font-awesome -->
   <script src="https://use.fontawesome.com/07d62e5a9f.js"></script>
@@ -46,8 +48,8 @@
           </ul>
         </div>
       </nav>
-
-
+</section>
+<div class="bg">
 
       <!-- Title -->
       <div class="row">
@@ -85,7 +87,7 @@
             </div>
           </div>
         </div>
-  </section>
+  
 
   <!-- Services -->
 
@@ -173,59 +175,60 @@
 
 <!-- footer -->
 <footer id = "footer">
-    <div class="agileits-w3layouts-footer">
-      <div class="row">
-        <div class="col-md-4 w3-agile-grid">
-        </div>
-        <div class="col-md-4 w3-agile-grid">
-        <h3>Contact Us</h3>
-          <div class="footer-agileinfo-social">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-rss"></i></a></li>
-              <li><a href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </div>
-          <br>
-          <div class="w3-address">
-            <div class="w3-address-grid">
-              <div class="w3-address-left">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-              </div>
-              <div class="w3-address-right">
-                                <h6>Phone no.</h6><p>+91 18008899999</p>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="w3-address-grid">
-              <div class="w3-address-left">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </div>
-              <div class="w3-address-right">
-                <h6>Email Address</h6>
-                <p>Email :<a href="mailto:example@email.com"> contact@turigoindia.com</a></p>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="w3-address-grid">
-              <div class="w3-address-left">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-              </div>
-              <div class="w3-address-right">
-                <h6>Location</h6>
-                <p> New Delhi
-                </p>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"> </div>
-      </div>
-    </div>
-</div>    
-  </footer>
+		<div class="agileits-w3layouts-footer">
+			<div class="row">
+				<div class="col-md-4 w3-agile-grid">
+				</div>
+				<div class="col-md-4 w3-agile-grid">
+				<h3>Contact Us</h3>
+					<div class="footer-agileinfo-social">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+						</ul>
+					</div>
+					<br>
+					<div class="w3-address">
+						<div class="w3-address-grid">
+							<div class="w3-address-left">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</div>
+							<div class="w3-address-right">
+				                        <h6>Phone no.</h6><p>+91 18008899999</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="w3-address-grid">
+							<div class="w3-address-left">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="w3-address-right">
+								<h6>Email Address</h6>
+								<p>Email :<a href="mailto:example@email.com"> contact@turigoindia.com</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="w3-address-grid">
+							<div class="w3-address-left">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+							</div>
+							<div class="w3-address-right">
+								<h6>Location</h6>
+								<p> New Delhi
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+</div>		
+	</footer>
+	<!-- //footer -->
   <!-- //footer -->
 <div class="copyright">
       <div class="container">
@@ -233,7 +236,7 @@
       </div>
     </div>
 
-
+</div>
 
 
 </html>
