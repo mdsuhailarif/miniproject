@@ -63,7 +63,7 @@
       <div class="row">
         <div class="col-lg-6 First-sec">
           <h1 class="main-text">Availiable Transports.</h1>
-          <p>Scoll down to check out the transport services near you, select then proceed.</p>
+          <p>Scoll down to check out the transport services near you,<br> select then proceed.</p>
           <a href="http://turigo.herokuapp.com/dashboard.html"><button type="button" class="btn btn-danger btn-lg download-button"><i class="fa fa-home" aria-hidden="true"></i> Home</button></a>
         <a href="#features"><button type="button" class="btn btn-outline-danger btn-lg download-button" ><i class="fa fa-car" aria-hidden="true"></i> Availiable Bookings</button></a>
           
