@@ -1,29 +1,4 @@
 <?php
-session_start();
-$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
-$port        = "port = 5432";
-$dbname      = "dbname = dcjrfn9ert59om";
-$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
-$db = pg_connect( "$host $port $dbname $credentials");
-
-$sql =<<<EOF
-   CREATE TABLE IF NOT EXISTS booking
-   (USERNAME CHAR(100) ,
-    NO TEXT  NOT NULL UNIQUE Primary Key,
-    FROM TEXT, TO TEXT,BY TEXT,D DATE); 
-EOF;
-
-$ret = pg_query($sql);
-   		if(!$ret) {
-                echo "Success";
-   		} 
-		 else {
-           echo "Error";
-   		}
-pg_close($db);
-?>
-
-<?php
 
 		$host        = "host = ec2-54-224-175-142.compute-1.amazonaws.com";
    		$port        = "port = 5432";
@@ -36,8 +11,7 @@ pg_close($db);
         $sql ="INSERT INTO booking VALUES ('$_POST[username]','$_POST[no]','$_POST[from]','$_POST[to]','$_POST[by]','$_POST[d]'))";
 		$ret = pg_query($sql);
    		if(!$ret) {
-   		$message = "Invalid Details!\\nTry again.";
-                echo "<script type='text/javascript'>alert('$message');</script>";
+                echo "error";
                 include_once("dashboard.html");
    		} 
 		 else {
