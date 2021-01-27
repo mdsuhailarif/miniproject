@@ -6,10 +6,12 @@
    		$credentials = "user = tgfotlqsesxkop password=8347981a2330af6e15c433302db79ab3d9ba7f7f32cd25dbabd0dff7e78f6276";
 
    		$db = pg_connect( "$host $port $dbname $credentials");
-
-						
-        $sql ="INSERT INTO booking VALUES ('$_POST[username]','$_POST[no]','$_POST[from]','$_POST[to]','$_POST[by]','$_POST[d]'))";
-		$ret = pg_query($sql);
+		
+		$sql1 =<<<EOF
+   ALTER TABLE logind
+   (ADD COLUMN NO TEXT,ADD COLUMN FROM TEXT,ADD COLUMN TO TEXT,ADD COLUMN BY TEXT,ADD COLUMN D DATE); 
+EOF;
+		$ret = pg_query($sql1);
    		if(!$ret) {
                 echo "error";
                 include_once("dashboard.html");
