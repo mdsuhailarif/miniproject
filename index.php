@@ -12,14 +12,14 @@ $sql =<<<EOF
     EMAIL TEXT  NOT NULL UNIQUE Primary Key,
     PASSWORD TEXT); 
 EOF;
- 
-$ret = pg_query( $sql);
-   if(!$ret) {
-      echo "Error";
-   }
-  else {
-      echo "Table created successfully\n";
-   }
+
+$sqlo =<<<EOF
+   CREATE TABLE IF NOT EXISTS booking
+   (USERNAME CHAR(100) ,
+    NO TEXT  NOT NULL UNIQUE Primary Key,
+    FROM TEXT, TO TEXT,BY TEXT,D DATE); 
+EOF;
+
    pg_close($db);
 include_once("Homepage.html");
 
