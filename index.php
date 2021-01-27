@@ -12,10 +12,10 @@ $sql =<<<EOF
     EMAIL TEXT  NOT NULL UNIQUE Primary Key,
     PASSWORD TEXT
     NO TEXT,
-	 FROM TEXT,
-	 TO TEXT,
-	 BY TEXT,
-	 D DATE;); 
+    FROM TEXT,
+    TO TEXT,
+    BY TEXT,
+    D DATE); 
 EOF;
 
 $ret=pg_query($sql);
