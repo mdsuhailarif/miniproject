@@ -13,7 +13,7 @@ $sql =<<<EOF
     PASSWORD TEXT); 
 EOF;
 
-$ret=pg_query(sql);
+$ret=pg_query($sql);
 if(!$ret){echo"error";}
 
    pg_close($db);
