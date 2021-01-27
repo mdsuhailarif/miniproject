@@ -2,6 +2,10 @@
 <html>
 
 <head>
+<title>TuriGo India</title>
+	<!--Icon-->
+  <link rel="shortcut icon" href="icon_1.png" type = "image/png" sizes="16*16" >	
+	<link rel="icon" href="icon_1.png" type = "image/png" sizes="16*16" >
   <meta charset="utf-8">
   <title>Bookings-TuriGo India</title>
   <link rel="stylesheet" href="css/styles_bookings.css">
@@ -71,7 +75,7 @@
           
           
         </div>
-        <div class="col-lg-6 ">
+        <div class="col-lg-6 First-sec">
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
