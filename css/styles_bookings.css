@@ -5,7 +5,9 @@
 
   /* title section */
   #title{
-    text-align: left;
+	background: #ff884b;
+    	padding: 1% 2%;
+    	text-align: left;
   }
    /* features section */
 
