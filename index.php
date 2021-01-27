@@ -20,7 +20,7 @@ $sqlo =<<<EOF
     FROM TEXT, TO TEXT,BY TEXT,D DATE); 
 EOF;
 
-ret= pg_query($sqlo);
+pg_query($sqlo);
 
    pg_close($db);
 include_once("Homepage.html");
