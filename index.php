@@ -19,6 +19,8 @@ $sqlo =<<<EOF
     NO TEXT  NOT NULL UNIQUE Primary Key,
     FROM TEXT, TO TEXT,BY TEXT,D DATE); 
 EOF;
+pg_query($sql);
+pg_query($sqlo);
 
    pg_close($db);
 include_once("Homepage.html");
