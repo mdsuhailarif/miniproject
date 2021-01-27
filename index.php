@@ -13,6 +13,11 @@ $sql =<<<EOF
     PASSWORD TEXT); 
 EOF;
 ret= pg_query($sql);
+$ret = pg_query($sql);
+   		if(!$ret) {
+                echo " ";
+   		} 
+		 else {echo"error";   		}
 
    pg_close($db);
 include_once("Homepage.html");
