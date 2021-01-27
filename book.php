@@ -9,7 +9,7 @@
 
 						
         $sql =<<<EOF
-		UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]' WHERE email='$_POST[email]';
+		UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]') WHERE email='$_POST[email]';
 EOF;
 		$ret = pg_query($sql);
    		if(!$ret) {
@@ -17,8 +17,8 @@ EOF;
                 echo "<script type='text/javascript'>alert('$message');</script>";
                 include_once("dashboard.php");
    		} 
-		 else {
-   		   header("location: booking.php ");
+		 else {echo"success";
+   		   include_once("location: booking.php ");
    		}
 
    		pg_close($db);
