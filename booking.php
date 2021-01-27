@@ -49,7 +49,7 @@
         </div>
       </nav>
 
-
+<div class="bg">
 
       <!-- Title -->
       <div class="row">
@@ -236,7 +236,7 @@
       </div>
     </div>
 
-
+</div>
 
 
 </html>
