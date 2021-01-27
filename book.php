@@ -16,10 +16,10 @@ EOF;
 		{
 				$message = "Invalid Details!\\nTry again";
                 echo "<script type='text/javascript'>alert('$message');</script>";
-				include_once("dashboard.php");
+				include_once("dashboard.html");
    		} 
 		 else {echo"success";
-   		   include_once("booking.php "); }
+   		   include_once("booking.php"); }
 
    		pg_close($db);
 ?>
