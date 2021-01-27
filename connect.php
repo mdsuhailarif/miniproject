@@ -9,9 +9,11 @@
 
  
 			$create ="CREATE TABLE IF NOT EXISTS logind ( username TEXT NOT NULL, email TEXT NOT NULL UNIQUE,password TEXT NOT NULL );)";
-        	$sql ="INSERT INTO logind VALUES ('$_POST[username]','$_POST[email]',md5('$_POST[password]'))";
-		$ret = pg_query($create);
-   		pg_query($sql);
+			
+			$ret = pg_query($create);
+			
+        	//$sql ="INSERT INTO logind VALUES ('$_POST[username]','$_POST[email]',md5('$_POST[password]'))";
+		
    		if(!$ret) {
    		$message = "Email is already registered.\\nTry again.";
                 echo "<script type='text/javascript'>alert('$message');</script>";
