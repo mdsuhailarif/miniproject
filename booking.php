@@ -40,11 +40,7 @@
 						</button>
 						<h1><a href="dashboard.html"><img src="images/logo.png" alt="logo" height="100"></a></h1>
 					</div>
-					<div class="top-nav-text">
-						<div class="nav-contact-w3ls"><p><i class="fa fa-user" aria-hidden="true"></i> Welcome!
-							 </p>
-						</div> 
-					</div>
+
 					<!-- navbar-header -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
@@ -58,9 +54,10 @@
 					</div>
 
 					<div class="clearfix"> </div>	
-				</nav>
+		</nav>
 	
-	</div>
+</div>
+
 <div class="bg">
 
       <!-- Title -->
