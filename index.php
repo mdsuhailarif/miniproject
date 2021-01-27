@@ -12,7 +12,6 @@ $sql =<<<EOF
     EMAIL TEXT  NOT NULL UNIQUE Primary Key,
     PASSWORD TEXT); 
 EOF;
-ret= pg_query($sql);
 
 $sqlo =<<<EOF
    CREATE TABLE IF NOT EXISTS booking
