@@ -101,7 +101,20 @@
   </div>
 
   <!-- Services -->
+<?php
 
+function agency($a){
+	if($a==1)
+	{$agency ="Yash Travels";}
+	elseif($a==2)
+	{$agency="Noida Specials";}
+	elseif($a==3)
+	{$agency="Travel point";}
+	elseif($a==4)
+	{$agency="Balaji Travels";}
+	else($a==5)
+	{$agency="Star Tour and travels";}
+}
   <section id="features" class="white-section">
         <div class="discount-offers">
            <em>Best offers with great deals</em>
@@ -154,21 +167,8 @@
     </table>
 	</div>
 </section>
-
-function agency($a){
-	if($a==1)
-	{$agency ="Yash Travels";}
-	elseif($a==2)
-	{$agency="Noida Specials";}
-	elseif($a==3)
-	{$agency="Travel point";}
-	elseif($a==4)
-	{$agency="Balaji Travels";}
-	else($a==5)
-	{$agency="Star Tour and travels";}
-}
   
-<?php
+
 
 		include_once("book.php");				
         $sql =<<<EOF
