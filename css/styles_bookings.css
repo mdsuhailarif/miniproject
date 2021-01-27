@@ -228,3 +228,27 @@ p{
 	margin:1em 0;
 }
 
+
+
+
+
+
+
+
+/*payment_sec*/
+ #payment_sec{
+ 	text-align:center;
+ 	padding: 2% 7%;
+ }
+/*copyright*/
+.copyright{
+  text-align: center;
+  background-color: black;
+  padding: 2% 5%;
+  color: #fff;
+}
+
+/*payment_cards*/
+.payment_options{
+	padding: 2% 5%;
+}
