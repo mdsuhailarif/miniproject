@@ -1,6 +1,7 @@
 .bg{
 	background: url(../images/bgd4.png) ;
 	background-size: 100% auto;
+	color:#fff;
 	}
 
   /* title section */
@@ -14,7 +15,7 @@
      padding: 2% 15%;
    }
   .icon{
-    color:#ff4c68;
+    color:#fff;
     margin-bottom: 1rem;
   }
   .icon:hover{
