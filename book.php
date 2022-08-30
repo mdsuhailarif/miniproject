@@ -9,10 +9,8 @@
 		
 		$email=$_POST[email];
 		
-        $sql =<<<EOF
-		UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]' WHERE email='$_POST[email]';
-EOF;
-		$ret = pg_query($sql);
+        $sql ="UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]' WHERE email='$_POST[email]';";
+		$ret = pg_query($db,$sql);
    		if(!$ret) 
 		{
 				$message = "Invalid Details!\\nTry again";
