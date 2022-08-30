@@ -7,7 +7,7 @@
 
    		$db = pg_connect( "$host $port $dbname $credentials");
 				
-        $sql ="UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]' WHERE email='$_POST[email]';";
+        $sql ="UPDATE logind SET n='$_POST[no]',frm='$_POST[frm]',too='$_POST[too]',bye='$_POST[bye]',da='$_POST[da]' WHERE email='$_POST[email]'";
 		$ret = pg_query($db,$sql);
    		if(!$ret) 
 		{
