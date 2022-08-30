@@ -81,7 +81,7 @@
             <td>Jaipur</td>
             <td>Travel Point</td>
           </tr>
-
+          <tr>
           <?php	
           $host        = "host = ec2-52-73-213-161.compute-1.amazonaws.com";
           $port        = "port = 5432";
@@ -92,12 +92,18 @@
           $rs = pg_query($db, $query);	
           if(!$rs)	
           { echo "failed";}
-          else{ 	
-              echo "<tr><td>"; echo "$row[0]"; echo "</td> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>";	
+          while ($row = pg_fetch_row($rs)){ 	
+              echo "<td>"; 
+              echo "$row[0]";
+              echo "</td> <td>";
+              echo "$row[1]"; 
+              echo "</td> <td>";
+              echo"$row[2]"; 
+              echo"</td>";	
             }
             pg_close($db);	
             ?>
-
+            </tr>
         </tbody>
       </table>
 
