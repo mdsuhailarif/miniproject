@@ -7,10 +7,8 @@
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
 
-$sql =<<<EOF
-   CREATE TABLE logind (USERNAME CHAR(100) , EMAIL TEXT  NOT NULL UNIQUE Primary Key, PASSWORD TEXT, N TEXT, FRM TEXT, TOO TEXT, BYE TEXT, DA DATE,agency TEXT); 
-EOF;
-
+$sql ="CREATE TABLE logind (USERNAME CHAR(100) , EMAIL TEXT  NOT NULL UNIQUE Primary Key, PASSWORD TEXT, N TEXT, FRM TEXT, TOO TEXT, BYE TEXT, DA DATE,agency TEXT)";
+pg_query($db,$sql);
 
 
    pg_close($db);
