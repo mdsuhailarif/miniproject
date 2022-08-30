@@ -92,8 +92,7 @@
           $rs = pg_query($db, $query);	
           if(!$rs)	
           { echo "failed";}
-          else
-            while ($row = pg_fetch_row($rs)) { 	
+          else{ 	
               echo "<tr><td>"; echo "$row[0]"; echo "</td> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>";	
             }
             pg_close($db);	
