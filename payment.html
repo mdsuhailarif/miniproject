@@ -87,21 +87,18 @@
           $port        = "port = 5432";
           $dbname      = "dbname = d6j1bk6en4rbf0";
           $credentials = "user = ncxgxfhqlrypnf password=ba2d16e7b5efb523d226e748c876ba6c3a5d55b9baa8a5531d14e8c275229c80";
-   
-   $db = pg_connect( "$host $port $dbname $credentials"  );	
+          $db = pg_connect( "$host $port $dbname $credentials"  );	
+          $query = "SELECT * FROM logind"; 	
+          $rs = pg_query($db, $query);	
+          if(!$rs)	
+          { echo "failed";}
+          else
+            while ($row = pg_fetch_row($rs)) { 	
+              echo "<tr><td>"; echo "$row[0]"; echo "</td> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>";	
+            }
+            pg_close($db);	
+            ?>
 
-$query = "SELECT * FROM logind"; 	
-
-$rs = pg_query($db, $query);	
-if(!$rs)	
-{ echo "failed";}	
-echo "<table>";	
-while ($row = pg_fetch_row($rs)) { 	
-  echo "<tr><td>"; echo "$row[0]"; echo "</td> <td>"; echo "$row[1]"; echo "</td> <td>"; echo"$row[2]"; echo"</td></tr>";	
-}echo "</table>";	
-   pg_close($db);	
-
-?>
         </tbody>
       </table>
 
