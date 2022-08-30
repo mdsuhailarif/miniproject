@@ -396,7 +396,7 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.prototype.next = function () {
     if (this.sliding) return
-    return this.slide('next')
+    this.slide('next')
   }
 
   Carousel.prototype.prev = function () {
