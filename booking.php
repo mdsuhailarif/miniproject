@@ -150,6 +150,7 @@
           <td><a href="payment.php"><button type="button" value='Star Tour and Travels' onClick="agency(5)" name="agency" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
       </tbody>
+      <input type="hidden" name="email" value="$_POST[email]">
 	  </form>
     </table>
 	</div>
