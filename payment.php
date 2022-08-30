@@ -88,7 +88,8 @@
           $dbname      = "dbname = d6j1bk6en4rbf0";
           $credentials = "user = ncxgxfhqlrypnf password=ba2d16e7b5efb523d226e748c876ba6c3a5d55b9baa8a5531d14e8c275229c80";
           $db = pg_connect( "$host $port $dbname $credentials"  );	
-          $query = "SELECT * FROM logind"; 	
+          $query = "SELECT * FROM logind"; 
+          $sql ="UPDATE logind SET agency='$_POST[agency]' WHERE email='$_POST[email]'";	
           $rs = pg_query($db, $query);	
           if(!$rs)	
           { echo "failed";}

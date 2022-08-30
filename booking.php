@@ -123,31 +123,31 @@
           <th scope="row">1</th>
           <td>Yash Travels</td>
           <td>🌟🌟🌟🌟</td>
-          <td><a href="payment.php"><button type="button" onClick="agency(1)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.php"><button type="button" value='Yash Travels' name="agency"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Noida Specials</td>
           <td>🌟🌟🌟</td>
-          <td><a href="payment.php"><button type="button" onClick="agency(2)"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.php"><button type="button" value='Noida Specials' onClick="agency(2)" name="agency"  class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
         <tr>
           <th scope="row">3</th>
           <td>Travel point</td>
           <td>🌟🌟🌟</td>
-         <td><a href="payment.php"><button type="button" onClick="agency(3)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+         <td><a href="payment.php"><button type="button" value='Travel point' onClick="agency(3)" name="agency" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Balaji Travels</td>
           <td>🌟🌟🌟</td>
-          <td><a href="payment.php"><button type="button" onClick="agency(4)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.php"><button type="button" value='Balaji Travels' onClick="agency(4)" name="agency" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
          <tr>
           <th scope="row">3</th>
           <td>Star Tour and Travels</td>
           <td>🌟🌟</td>
-          <td><a href="payment.php"><button type="button" onClick="agency(5)" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
+          <td><a href="payment.php"><button type="button" value='Star Tour and Travels' onClick="agency(5)" name="agency" class="btn btn-outline-success btn-lg download-button">Proceed</button></a></td>
         </tr>
       </tbody>
 	  </form>
